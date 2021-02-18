@@ -1,0 +1,14 @@
+-twin tanks, 3000 hp each
+-duplicate SI in hits (2 hunters, 2 chargers, etc., quad caps as well)
+-flying hunters cannot be m2'd
+-awp can spawn more often in the saferoom and does double damage or more dmg
+-no musical scores or audio warnings for witch, j
+-shooting propane tank starts a horde, only propane tanks and not jerry cans
+-no tank slowdown while being shot, no water slowdown for survs while tank is active
+-direct impact hit by spitter goo causes damage (like 8 dmg) plus pushback
+-passing throwables or consumables to players has a 30% change to miss, as in doesn't go to the other player and goes flying lol
+-if you're playing as the tank, you have a one time eject button. you can respawn to the point where you first started as tank BUT you lose half your remaining health in doing so.
+-Popping boomers sounds like an explosion
+-charger can m2 hittables and make them go flying like the tank does
+-follow zonemod map layout in terms of random objects on the map like trucks or barriers
+-one scratch doors
