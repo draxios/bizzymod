@@ -12,6 +12,7 @@ mm_dedicated_force_servers 192.223.30.60:27015
 
 # modes
 
+## numbersmod
 numbersmod is Bizzy's creation for numbers the numblers. It's played a lot more cause he's famous.
 
   * realism
@@ -28,7 +29,8 @@ numbersmod is Bizzy's creation for numbers the numblers. It's played a lot more 
   * zero god frames
   * no bunnyhopping, lerp control
   * various fixes and balancing touches 
-
+  
+## bizzymod
 bizzymod is Bizzy's wild and crazy realism mod, which isn't wild and crazy as much as it is hard and painful.
 
   * crazy horde
@@ -38,8 +40,11 @@ bizzymod is Bizzy's wild and crazy realism mod, which isn't wild and crazy as mu
   * "everybody dies"
   * most of other stuffz in numbersmod
 
+## invokemod
 invokemod is a mod for invoke, it's special and hidden.
 
+## busmod
 busmod is cool buster's idea, it's in progress, release date 2029.
 
+## sinmod
 sinmod is sin's mod, it's incredibly difficult to create so it isn't ready, ever.
