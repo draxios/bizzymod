@@ -10,6 +10,10 @@ cl_cmdrate 100;cl_updaterate 100;rate 100000;cl_interp_ratio 0;cl_interp 0
 Force the server to be used:
 mm_dedicated_force_servers 192.223.30.60:27015
 
+# Shoutout
+I want to shout out Sir, and all the hard work he has done to keep these modes alive and going in the L4D2 world.
+Most of this was based on his work and the work of others. I owe most of this to them alone.
+
 # modes
 
 ## numbersmod
