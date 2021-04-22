@@ -1,0 +1,8 @@
+"CustomJoinMessages"
+{
+	"STEAM_1:0:80286445"
+	{
+		"playerwasnamed"		"SiNsation™"
+		"message"		";"
+	}
+}

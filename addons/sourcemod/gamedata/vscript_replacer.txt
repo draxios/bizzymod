@@ -1,0 +1,81 @@
+"Games"
+{
+	"#default"
+	{
+		"Functions"
+		{
+			"VScriptServerCompileScript"
+			{
+				"signature"		"VScriptServerCompileScript"
+				"callconv"		"cdecl"
+				"return"		"int"
+				"this"			"ignore"
+				"arguments"
+				{
+					"pszScriptName"
+					{
+						"type"	"charptr"
+					}
+					"bWarnMissing"
+					{
+						"type"	"bool"
+					}
+				}
+			}
+		}
+	}
+
+	"csgo"
+	{
+		"Keys"
+		{
+			"ICEKey"		"d7NSuLq2"
+		}
+
+		"Functions"
+		{
+			"VScriptServerCompileScript"
+			{
+				"windows"
+				{
+					"callconv"		"fastcall"
+				}
+			}
+		}
+
+		"Signatures"
+		{
+			/* int VScriptServerCompileScript(const char *pszScriptName, bool bWarnMissing) */
+			"VScriptServerCompileScript"
+			{
+				"library"		"server"
+				"linux"			"\x55\x89\x2A\x57\x56\x53\x81\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x85\x2A\x0F\x84\x2A\x2A\x2A\x2A\x8B\x2A\x89"
+				/* 55 89 ? 57 56 53 81 ? ? ? ? ? ? ? ? ? ? 8B ? ? 85 ? 0F 84 ? ? ? ? 8B ? 89 */
+				"windows"		"\x55\x8B\x2A\x81\x2A\x2A\x2A\x2A\x2A\x53\x56\x8B\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x57\x85"
+				/* 55 8B ? 81 ? ? ? ? ? 53 56 8B ? 8B ? ? ? ? ? 57 85 */
+				/* Search "Script not found (%s)" */
+			}
+		}
+	}
+
+	"left4dead2"
+	{
+		"Keys"
+		{
+			"ICEKey"		"SDhfi878"
+		}
+
+		"Signatures"
+		{
+			/* int VScriptServerCompileScript(const char *pszScriptName, bool bWarnMissing) */
+			"VScriptServerCompileScript"
+			{
+				"library"		"server"
+				"linux"			"@_Z26VScriptServerCompileScriptPKcb"
+				"windows"		"\x55\x8B\x2A\x81\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x33\x2A\x89\x2A\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x56\x8B\x2A\x2A\x89\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x85\x2A\x75"
+				/* 55 8B ? 81 ? ? ? ? ? ? ? ? ? ? 33 ? 89 ? ? 8B ? ? ? ? ? 56 8B ? ? 89 ? ? ? ? ? ? ? ? ? ? ? ? 85 ? 75 */
+				/* Search "Script file type does not match VM type" */
+			}
+		}
+	}
+}

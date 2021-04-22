@@ -1,0 +1,185 @@
+"MatchModes"
+{
+	"ZoneMod Configs"
+	{
+		"zonemod"
+		{
+			"name" "ZoneMod 1.9.14"
+		}
+		"zm3v3"
+		{
+			"name" "3v3 ZoneMod"
+		}
+		"zm2v2"
+		{
+			"name" "2v2 ZoneMod"
+		}
+		"zm1v1"
+		{
+			"name" "1v1 ZoneMod"
+		}
+	}
+	"NextMod Configs"
+	{
+		"nextmod"
+		{
+			"name" "NextMod 1.0.5"
+		}
+		"nextmod3v3"
+		{
+			"name" "3v3 NextMod"
+		}
+		"nextmod2v2"
+		{
+			"name" "2v2 NextMod"
+		}
+		"nextmod1v1"
+		{
+			"name" "1v1 NextMod"
+		}
+	}
+	"Promod Configs"
+	{
+		"pmelite"
+		{
+			"name" "Promod Elite 1.1"
+		}
+	}
+	"EQ Configs"
+	{
+		"eq"
+		{
+			"name" "Equilibrium 3.0c"
+		}
+		"eq3v3"
+		{
+			"name" "3v3 EQ"
+		}
+		"eq2v2"
+		{
+			"name" "2v2 EQ"
+		}
+		"eq1v1"
+		{
+			"name" "1v1 EQ"
+		}
+	}
+	"Apex Configs"
+	{
+		"apex"
+		{
+			"name" "Apex 1.1.2"
+		}
+	}
+	"bizzymod Configs"
+	{
+		"bizzymodDEV"
+		{
+			"name" "bizzymod 0.8"
+		}
+		"bizzymod"
+		{
+			"name" "bizzymod 0.7"
+		}
+
+	}
+	"numbersmod Configs"
+	{
+		"numbersmodDEV"
+		{
+			"name" "numbersmod 6.9.8"
+		}
+		"numbersmod"
+		{
+			"name" "numbersmod 6.9.7"
+		}
+
+	}
+	"bobbymod Configs"
+	{
+		"bobbymodDEV"
+		{
+			"name" "bobbymod 0.4"
+		}
+
+		"bobbymod"
+		{
+			"name" "bobbymod 0.3"
+		}
+	}
+	"OneMod Configs"
+	{
+		"onemod"
+		{
+			"name" "OneMod 1.1"
+		}
+	}
+	"spacemod Configs"
+	{
+		"spacemod"
+		{
+			"name" "spacemod -1.0"
+		}
+	}
+	"flatmod Configs"
+	{
+		"flatmod"
+		{
+			"name" "flatmod 0.0"
+		}
+	}
+
+	"barrymod Configs"
+	{
+		"barrymod"
+		{
+			"name" "barrymod 69.0.0"
+		}
+	}
+
+	"busmod Configs"
+	{
+		"busmod"
+		{
+			"name" "busmod 69.69.69"
+		}
+	}
+	"psychomod Configs"
+	{
+		"psychomod"
+		{
+			"name" "psychomod 6.6.6"
+		}
+	}
+	"kneemod Configs"
+	{
+		"kneemodDEV"
+		{
+			"name" "kneemod 1.1"
+		}
+
+		"kneemod"
+		{
+			"name" "kneemod 1.0"
+		}
+	}
+
+	"invokemod Configs"
+	{
+		"invokemodDEV"
+		{
+			"name" "invokemod 0.0.69.2"
+		}
+
+		"invokemod"
+		{
+			"name" "invokemod 0.0.69"
+		}
+
+	}
+
+
+
+
+
+}
