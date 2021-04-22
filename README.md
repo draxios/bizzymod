@@ -44,11 +44,4 @@ bizzymod is Bizzy's wild and crazy realism mod, which isn't wild and crazy as mu
   * "everybody dies"
   * most of other stuffz in numbersmod
 
-## invokemod
-invokemod is a mod for invoke, it's special and hidden.
-
-## busmod
-busmod is cool buster's idea, it's in progress, release date 2029.
-
-## sinmod
-sinmod is sin's mod, it's incredibly difficult to create so it isn't ready, ever.
+## Lots of other mods!
