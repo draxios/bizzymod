@@ -1,7 +1,7 @@
 # bizzymod
 Bizzymod is idea behind Bizzy's Playhouse L4D2 server and it's playmodes.
 
-Bizzy's Playhouse is a simple Linux dedicated L4D2 server currently residing @ 192.223.30.60
+Bizzy's Playhouse is a simple Linux dedicated L4D2 server currently residing in Chicago.
 The server automatically restarts every night.
 
 Tickrate Settings:
