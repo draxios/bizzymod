@@ -87,11 +87,11 @@
 	{
 		"numbersmodDEV"
 		{
-			"name" "numbersmod 6.9.8"
+			"name" "numbersmod 6.9.9"
 		}
 		"numbersmod"
 		{
-			"name" "numbersmod 6.9.7"
+			"name" "numbersmod 6.9.8"
 		}
 
 	}
