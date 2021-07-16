@@ -1,43 +1,121 @@
-# bizzymod
-Bizzymod is idea behind Bizzy's Playhouse L4D2 server and it's playmodes.
+# **L4D2 Competitive Rework**
 
-Bizzy's Playhouse is a simple Linux dedicated L4D2 server currently residing in Chicago.
+<== IMPORTANT NOTICE DON'T IGNORE THIS OKAY?! ===>  
+<------------------ **LINUX SUPPORT ONLY** ------------------>  
+< This means Windows is not Supported, so don't ask~ :smile: >
 
-Tickrate Settings:
-cl_cmdrate 100;cl_updaterate 100;rate 100000;cl_interp_ratio 0;cl_interp 0
+## **About:**
 
-# Shoutout
-I want to shout out Sir, and all the hard work he has done to keep these modes alive and going in the L4D2 world.
-Most of this was based on his work and the work of others. I owe most of this to them alone.
+This is mainly a project that focuses on reworking the very outdated platform for competitive L4D2 for **Linux** Servers.
+It will contain both much needed fixes that are simply unable to be implemented on the older sourcemod versions as well as incompatible and outdated files being updated to working versions.
+Issues and Discussions can be held both on Github and on our [Steam Group](https://steamcommunity.com/groups/srv_rework)
 
-# modes
+> **Included Matchmodes:**
+* **Zonemod 1.9.9**
+* **NextMod 1.0.5**
+* **Promod Elite 1.1**
+* **Equilibrium 3.0c**
+* **Apex 1.1.2**
 
-## numbersmod
-numbersmod is Bizzy's creation for numbers the numblers. It's played a lot more cause he's famous.
+---
 
-  * realism
-  * tier 1 only, plus 1 allowed hunting rifle
-  * 7k tank
-  * witch and tank every map
-  * one hit doors
-  * mean witch
-  * increased spawn
-  * faster si spawn times
-  * faster si recharge times
-  * temp health kits
-  * votemute
-  * zero god frames
-  * no bunnyhopping, lerp control
-  * various fixes and balancing touches 
+## **Important Updates for The Last Stand update (24 September, 2020):**
+* [Left4DHooks](https://forums.alliedmods.net/showthread.php?t=321696)
+  * We're moving on from the ancient Left4Downtown2, L4D2 Direct and L4D2 Addresses, this allows us to move on to Sourcemod 1.10 as well.
+* [Sourcemod 1.10](https://sourcemod.net/downloads.php?branch=stable)
+  * It's good to stay up to date, which is the whole reason Competitive Rework started in the first place, but as the change to 1.10 is quite big, we're moving towards that.
+  * I do want to point out that this is likely where I personally (Sir) will stop updating Sourcemod as a lot of the stuff we're using make use of array structs which will be unsupported in 1.11.
+* Folders have been cleaned and files have been recompiled, we no longer have tons of duplicate plugins in different folders. All the competitive plugins are now located in plugins/optional.
+* The Last Stand comes with a lot of exploit patches and map changes (mostly infected ladders) that config devs have already added themselves (or have added conflicting things) if you happen to stumble on anything, please take a screenshot and report an issue on the Github so it can be resolved quickly.
+
+---
+
+## **Fixes/Changes Integrated into Confogl & Sourcemod:**
+
+> **Plugins/Extensions**
+* [Bullet Displacement Fix](https://forums.alliedmods.net/showthread.php?t=315405)
+  * Fixes a Source Engine bug that causes bullets to miss targets that they were supposed to hit.
+* [Tank Rock Lag Compensation](https://forums.alliedmods.net/showthread.php?p=2646073)
+  * Like the title says, you now simply just aim at the rock. You no longer have to "lead" your shots.
+* [Buffer Overflow Fix](https://forums.alliedmods.net/showthread.php?p=2607757)
+  * Prevents large .cfg files from causing a Buffer Overflow.
+* Tank Hittable Glow.
+  * This plugin adds a constant Glow to Hittables the Tank has punched.
+    * This is such a big QoL Fix and is implemented so smoothly that people often think it's part of the game, why not load it in every config?
+* Tons of Jockey Fixes:
+  * Fixed Jockeys and Chargers from capping the same Survivors at the same time.
+  * Fixed jockeyed Survivors going down ladders slowly.
+  * Fixed an issue where Survivors could selfclear themselves by just spamming M2 while holding a melee (while being jockeyed)
+  * Fixed an issue that allowed Jockeys to be able to pounce Survivors when spamming jump while their ability isn't ready and/or just got shoved.
+* L4D2 Ghost Anti-Cheat: A safe plugin that prevents 3rd party programs from being able to lock and see Infected Ghosts.
+* Shadow Fix: This prevents shadows showing through buildings, which would allow Survivors to know exactly where an infected was.
+
+
+> **Additional Fixes:**
+* Added "**mv_maxplayers**" that replaces sv_maxplayers in the Server.cfg, this is used to prevent it from being overwritten every map change.
+  * On config unload, the value will be to the value used in the Server.cfg
+* Fixed **!forcematch** causing the Server to crash if a custom builtinvote was currently active.
+* Fixed players being able to duplicate Survivors by using "**jointeam charactername**" when it was already taken.
+* Fixed the **playermanagement** plugin causing issues with creating bots and leaving the server full with bots called "k9Q6CK42".
+  * This version is fully compatible with Zonemod 1.9.4's Spawn Order Fix and is loaded by default in every competitive config.
+* Fixed votes taking Spectators into account.
+* Fixed a memory leak caused by server-side Scripts (Mainly Plugins).
+* Cleaned up Console spam generated by the Server.
+* Cleaned up Chat by adding toggle-able settings to prevent certain messages that clutter chat:
+  * Server ConVars being set.
+  * Comes with a setting that allows Spectators to read Survivor/Infected team chat.
   
-## bizzymod
-bizzymod is Bizzy's wild and crazy realism mod, which isn't wild and crazy as much as it is hard and painful.
+> **Configs/ConVars**
+* Every Confogl matchmode will now execute 2 additional files, namely "**sharedplugins.cfg**" and "**generalfixes.cfg**" which are located in your **left4dead2/cfg** folder.
+  * "**General Fixes**" simply ensures that all the Fixes discussed in here are loaded by every Matchmode.
+  * "**Shared Plugins**" is for you, the Server host. You surely have some plugins that you'd like to be loaded in every matchmode, you can define them here. 
+    * **NOTE:** Plugin load locking and unlocking is no longer handled by the Configs themselves, so if you're using this project do **NOT** define plugin load locks/unlocks within the configs you're adding manually.
+	
+## **Credits:**
 
-  * crazy horde
-  * realism
-  * hidden and sparse tier 2
-  * tank and witch every map
-  * "everybody dies"
-  * most of other stuffz in numbersmod
+> **Foundation/Advanced Work:**
+* AlliedModders LLC.
+* "Confogl Team"
+* Dr!fter
+* Jahze
+* Prodigysim
+* Silvers
+* XutaxKamay
+* Visor
 
-## Lots of other mods!
+> **Additional Plugins/Extensions:**
+* Accelerator74
+* Arti 
+* AtomicStryker 
+* Blade 
+* Canadarox 
+* CircleSquared 
+* Darkid 
+* Dcx 
+* Die Teetasse 
+* Disawar1 
+* Don 
+* Epilimic 
+* Estoopi 
+* Griffin 
+* Jacob 
+* Luckylock 
+* Lux
+* Powerlord
+* Sheo
+* Sir
+* Stabby 
+* Step 
+* Tabun
+* V10 
+* Vintik
+* VoiDeD
+
+> **Testing/Issue Reporting:**
+* Devilesk (+ Fixing)
+* Electr0
+* Rena (+ Fixing)
+* Eric (+ Fixing)
+
+**NOTE:** If your work is being used and I forgot to credit you, my sincere apologies.  
+I've done my best to include everyone on the list, simply create an issue and name the plugin/extension you've made/contributed to and I'll make sure to credit you properly.

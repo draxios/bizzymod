@@ -4,7 +4,15 @@
 	{
 		"zonemod"
 		{
-			"name" "ZoneMod 1.9.14"
+			"name" "ZoneMod 2.1"
+		}
+		"zoneretro"
+		{
+			"name" "ZoneMod Retro 2.1"
+		}
+		"zonemodold"
+		{
+			"name" "ZoneMod 1.9.16"
 		}
 		"zm3v3"
 		{
@@ -71,115 +79,66 @@
 			"name" "Apex 1.1.2"
 		}
 	}
-	"bizzymod Configs"
+	"Bizzymod Configs"
 	{
-		"bizzymodDEV"
-		{
-			"name" "bizzymod 0.8"
-		}
-		"bizzymod"
-		{
-			"name" "bizzymod 0.7"
-		}
-
-	}
-	"numbersmod Configs"
-	{
-		"numbersmodDEV"
-		{
-			"name" "numbersmod 6.9.9"
-		}
 		"numbersmod"
 		{
-			"name" "numbersmod 6.9.8"
+			"name" "numbersmod 6.9.69"
 		}
-
-	}
-	"bobbymod Configs"
-	{
-		"bobbymodDEV"
+		"kneemod"
+		{
+			"name" "kneemod 2.1"
+		}
+		"bobbymod"
 		{
 			"name" "bobbymod 0.4"
 		}
-
-		"bobbymod"
-		{
-			"name" "bobbymod 0.3"
-		}
-	}
-	"OneMod Configs"
-	{
-		"onemod"
-		{
-			"name" "OneMod 1.1"
-		}
-	}
-	"spacemod Configs"
-	{
-		"spacemod"
-		{
-			"name" "spacemod -1.0"
-		}
-	}
-	"flatmod Configs"
-	{
-		"flatmod"
-		{
-			"name" "flatmod 0.0"
-		}
-	}
-
-	"barrymod Configs"
-	{
-		"barrymod"
-		{
-			"name" "barrymod 69.0.0"
-		}
-	}
-
-	"busmod Configs"
-	{
 		"busmod"
 		{
 			"name" "busmod 69.69.69"
 		}
-	}
-	"psychomod Configs"
-	{
-		"psychomod"
+		"bizzymod"
 		{
-			"name" "psychomod 6.6.6"
+			"name" "bizzymod 0.8"
 		}
-	}
-	"kneemod Configs"
-	{
-		"kneemodDEV"
+		"flatmod"
 		{
-			"name" "kneemod 1.1"
+			"name" "flatmod 0.1"
 		}
-
-		"kneemod"
+		"spacemod"
 		{
-			"name" "kneemod 1.0"
+			"name" "spacemod -1.0"
 		}
-	}
-
-	"invokemod Configs"
-	{
-		"invokemodDEV"
+		"onemod"
 		{
-			"name" "invokemod 0.0.69.2"
+			"name" "OneMod 1.2"
 		}
 
 		"invokemod"
 		{
-			"name" "invokemod 0.0.69"
+			"name" "invokemod 0.0.69.2"
 		}
+
 
 	}
 
-
-
-
-
+	"Hunters Configs"
+	{
+		"zonehunters"
+		{
+			"name" "ZoneHunters 2.1"
+		}
+		"zh3v3"
+		{
+			"name" "3v3 ZoneHunters"
+		}
+		"zh2v2"
+		{
+			"name" "2v2 ZoneHunters"
+		}
+		"zh1v1"
+		{
+			"name" "1v1 ZoneHunters"
+		}
+	}
 }

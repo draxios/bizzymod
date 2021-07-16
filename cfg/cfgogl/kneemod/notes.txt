@@ -13,8 +13,6 @@ confogl_addcvar sm_stats_autoprint_vs_round 8372
 //AUTO_MVPCON_MORE_ROUND  32768   // console table: more mvp stats, time alive, etc
 //AUTO_INFCON_ROUND       131072  // console table: infected team stats
 
-
-
 Basic Parameters:1. Realism2. Up to 8 survivors, 4 infected.3. FF at 100%4. All weapons5. All health6. Tank & Witch every map7. At tank spawn, 2 tanks, and no spitter, hunter spawns (if possible)8. All non-tank SI have significantly added health.
 9. Only 4 survivors can enter the saferoom, so half the team must die or kill each other.
 

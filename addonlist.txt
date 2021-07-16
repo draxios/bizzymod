@@ -1,4 +1,5 @@
 "AddonList"
 {
+	"TheCrashStand.vpk"		"1"
 	"thesaccing_v2.vpk"		"1"
 }
