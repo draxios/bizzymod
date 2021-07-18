@@ -1,4 +1,24 @@
-#define PLUGIN_VERSION 		"1.1"
+/*
+*	Hunter Pounce Damage
+*	Copyright (C) 2021 Silvers
+*
+*	This program is free software: you can redistribute it and/or modify
+*	it under the terms of the GNU General Public License as published by
+*	the Free Software Foundation, either version 3 of the License, or
+*	(at your option) any later version.
+*
+*	This program is distributed in the hope that it will be useful,
+*	but WITHOUT ANY WARRANTY; without even the implied warranty of
+*	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*	GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU General Public License
+*	along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+
+
+#define PLUGIN_VERSION 		"1.1b"
 
 /*=======================================================================================
 	Plugin Info:
@@ -11,6 +31,14 @@
 
 ========================================================================================
 	Change Log:
+
+1.1b (16-Jun-2021)
+	- Compatibility update for L4D2's "2.2.1.3" update.
+	- GameData .txt file updated.
+
+1.1a (24-Sep-2020)
+	- Compatibility update for L4D2's "The Last Stand" update.
+	- GameData .txt file updated.
 
 1.1 (10-May-2020)
 	- Added better error log message when gamedata file is missing.

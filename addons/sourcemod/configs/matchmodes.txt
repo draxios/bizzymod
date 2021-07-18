@@ -89,6 +89,10 @@
 		{
 			"name" "kneemod 2.1"
 		}
+		"kneemodX"
+		{
+			"name" "kneemod expert 2.1"
+		}
 		"bobbymod"
 		{
 			"name" "bobbymod 0.4"
@@ -113,7 +117,10 @@
 		{
 			"name" "OneMod 1.2"
 		}
-
+		"powermod"
+		{
+			"name" "powermod 4.0"
+		}
 		"invokemod"
 		{
 			"name" "invokemod 0.0.69.2"
