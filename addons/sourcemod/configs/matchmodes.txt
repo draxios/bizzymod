@@ -4,11 +4,11 @@
 	{
 		"zonemod"
 		{
-			"name" "ZoneMod 2.1"
+			"name" "ZoneMod 2.2"
 		}
 		"zoneretro"
 		{
-			"name" "ZoneMod Retro 2.1"
+			"name" "ZoneMod Retro 2.2"
 		}
 		"zonemodold"
 		{
@@ -85,13 +85,13 @@
 		{
 			"name" "numbersmod 6.9.69"
 		}
+		"numbersmodX"
+		{
+			"name" "numbersmod 7.0.0"
+		}
 		"kneemod"
 		{
 			"name" "kneemod 2.1"
-		}
-		"kneemodX"
-		{
-			"name" "kneemod expert 2.1"
 		}
 		"bobbymod"
 		{
@@ -133,7 +133,7 @@
 	{
 		"zonehunters"
 		{
-			"name" "ZoneHunters 2.1"
+			"name" "ZoneHunters 2.2"
 		}
 		"zh3v3"
 		{
