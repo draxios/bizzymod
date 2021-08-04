@@ -93,6 +93,10 @@
 		{
 			"name" "kneemod 2.1"
 		}
+		"bananamod"
+		{
+			"name" "bananamod 0.5"
+		}
 		"bobbymod"
 		{
 			"name" "bobbymod 0.4"
