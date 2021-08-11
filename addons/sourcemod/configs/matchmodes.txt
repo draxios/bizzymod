@@ -87,7 +87,7 @@
 		}
 		"numbersmodX"
 		{
-			"name" "numbersmod 6.69.70"
+			"name" "numbersmod 6.69.420"
 		}
 		"kneemod"
 		{
