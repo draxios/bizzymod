@@ -18,7 +18,7 @@
 
 
 
-#define PLUGIN_VERSION		"1.36"
+#define PLUGIN_VERSION		"1.51"
 
 /*=======================================================================================
 	Plugin Info:
@@ -31,6 +31,15 @@
 
 ========================================================================================
 	Change Log:
+
+1.51 (10-Aug-2021)
+	- Added natives "L4D_GetCurrentChapter" and "L4D_GetMaxChapters" to get the current and max chapters count. Thanks to "Psyk0tik" for help.
+	- L4D1: added natives "L4D_GetVersusMaxCompletionScore" and "L4D_SetVersusMaxCompletionScore" to get/set Versus max score. Thanks to "BHaType" for offsets.
+	- L4D1: Fixed broken "CThrowActivate" signature due to the 1.0.4.0 update. Thank to "matrixmark" for reporting.
+
+1.50 (22-Jul-2021)
+	- Fixed "Native was not found" errors in L4D1. Thanks to "xerox8521" for reporting.
+	- Test plugin: Fixed "L4D_OnMaterializeFromGhostPre" and "L4D_OnMaterializeFromGhost" throwing "String formatted incorrectly" errors.
 
 1.46 (09-Jul-2021)
 	- L4D2: Added native "L4D2_ExecVScriptCode" to exec VScript code instead of having to create an entity to fire code.
@@ -894,9 +903,6 @@ public Action sm_l4dd(int client, int args)
 		PrintToServer("L4D_GetTeamScore A Camp: %d",				L4D_GetTeamScore(1, true)); //WORKING
 		PrintToServer("L4D_GetTeamScore B Camp: %d",				L4D_GetTeamScore(2, true)); //WORKING
 
-		PrintToServer("L4D_GetVersusMaxCompletionScore %d",			L4D_GetVersusMaxCompletionScore()); //WORKING
-		L4D_SetVersusMaxCompletionScore(314); //WORKING
-		PrintToServer("L4D_SetVersusMaxCompletionScore %d",			L4D_GetVersusMaxCompletionScore()); //WORKING
 		PrintToServer("");
 		PrintToServer("");
 		PrintToServer("L4D_ScavengeBeginRoundSetupTime %f",			L4D_ScavengeBeginRoundSetupTime());
@@ -905,6 +911,12 @@ public Action sm_l4dd(int client, int args)
 		PrintToServer("");
 		PrintToServer("");
 	}
+
+	PrintToServer("L4D_GetVersusMaxCompletionScore %d",			L4D_GetVersusMaxCompletionScore()); //WORKING
+	L4D_SetVersusMaxCompletionScore(314); //WORKING
+
+	PrintToServer("L4D_GetMaxChapters %d", L4D_GetMaxChapters()); //WORKING
+	PrintToServer("L4D_GetCurrentChapter %d", L4D_GetCurrentChapter()); //WORKING
 
 	PrintToServer("L4D_NotifyNetworkStateChanged %d",				L4D_NotifyNetworkStateChanged()); //SEEMS WORKING, UNKNOWN
 
@@ -1822,7 +1834,7 @@ public Action L4D_OnMaterializeFromGhostPre(int client)
 		called++;
 		g_iForwards++;
 
-		ForwardCalled("\"L4D_OnMaterializeFromGhostPre\" %d > %d)", client);
+		ForwardCalled("\"L4D_OnMaterializeFromGhostPre\" %d (%N)", client, client);
 	}
 
 	// WORKS
@@ -1837,7 +1849,7 @@ public Action L4D_OnMaterializeFromGhost(int client)
 		called++;
 		g_iForwards++;
 
-		ForwardCalled("\"L4D_OnMaterializeFromGhost\" %d > %d)", client);
+		ForwardCalled("\"L4D_OnMaterializeFromGhost\" %d (%N)", client, client);
 	}
 }
 
