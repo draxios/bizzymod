@@ -95,7 +95,11 @@
 		}
 		"bananamod"
 		{
-			"name" "bananamod 0.5"
+			"name" "bananamod 0.6"
+		}
+		"screammod1v1"
+		{
+			"name" "screammod1v1 0.5"
 		}
 		"bobbymod"
 		{
