@@ -97,9 +97,9 @@
 		{
 			"name" "bananamod 0.6"
 		}
-		"screammod1v1"
+		"deadman"
 		{
-			"name" "screammod1v1 0.5"
+			"name" "deadman 6.0"
 		}
 		"bobbymod"
 		{
