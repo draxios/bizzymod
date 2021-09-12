@@ -89,6 +89,10 @@
 		{
 			"name" "numbersmod 6.69.420"
 		}
+		"seltzermod"
+		{
+			"name" "seltzermod 4.20"
+		}
 		"kneemod"
 		{
 			"name" "kneemod 2.1"
