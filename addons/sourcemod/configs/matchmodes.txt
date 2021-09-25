@@ -2,6 +2,10 @@
 {
 	"ZoneMod Configs"
 	{
+		"zonemodX"
+		{
+			"name" "ZoneMod 2.5"
+		}
 		"zonemod"
 		{
 			"name" "ZoneMod 2.2"
