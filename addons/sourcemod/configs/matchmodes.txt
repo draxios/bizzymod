@@ -4,7 +4,7 @@
 	{
 		"zonemodX"
 		{
-			"name" "ZoneMod 2.5"
+			"name" "ZoneMod 2.5.1"
 		}
 		"zonemod"
 		{
@@ -91,7 +91,7 @@
 		}
 		"numbersmodX"
 		{
-			"name" "numbersmod 6.69.420"
+			"name" "numbersmod 6.9.420"
 		}
 		"seltzermod"
 		{
@@ -108,6 +108,14 @@
 		"deadmanX"
 		{
 			"name" "deadman 6.1"
+		}
+		"barrymodX"
+		{
+			"name" "barrymod 70.0.0"
+		}
+		"barrymod"
+		{
+			"name" "barrymod 69.0.0"
 		}
 		"bobbymod"
 		{
