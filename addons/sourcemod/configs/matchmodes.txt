@@ -111,7 +111,7 @@
 		}
 		"barrymodX"
 		{
-			"name" "barrymod 70.0.0"
+			"name" "barrymod 70.0.1"
 		}
 		"barrymod"
 		{
