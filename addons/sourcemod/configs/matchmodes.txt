@@ -85,13 +85,13 @@
 	}
 	"Bizzymod Configs"
 	{
-		"numbersmod"
-		{
-			"name" "numbersmod 6.9.69"
-		}
 		"numbersmodX"
 		{
 			"name" "numbersmod 6.9.420"
+		}
+		"numbersmod"
+		{
+			"name" "numbersmod 6.9.419"
 		}
 		"seltzermod"
 		{
