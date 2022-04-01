@@ -93,21 +93,17 @@
 		{
 			"name" "numbersmod 6.9.419"
 		}
-		"seltzermod"
-		{
-			"name" "seltzermod 4.20"
-		}
-		"kneemod"
-		{
-			"name" "kneemod 2.2"
-		}
 		"bananamod"
 		{
 			"name" "bananamod 0.7"
 		}
-		"deadmanX"
+		"zonereal"
 		{
-			"name" "deadman 6.1"
+			"name" "zonemod realism 6.9"
+		}
+		"kneemod"
+		{
+			"name" "kneemod 2.2"
 		}
 		"barrymodX"
 		{
@@ -117,9 +113,17 @@
 		{
 			"name" "barrymod 69.0.0"
 		}
+		"deadmanX"
+		{
+			"name" "deadman 6.1"
+		}
 		"bobbymod"
 		{
 			"name" "bobbymod 0.4"
+		}
+		"seltzermod"
+		{
+			"name" "seltzermod 4.20"
 		}
 		"busmod"
 		{
