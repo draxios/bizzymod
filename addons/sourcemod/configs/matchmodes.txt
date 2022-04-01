@@ -103,7 +103,7 @@
 		}
 		"bananamod"
 		{
-			"name" "bananamod 0.6"
+			"name" "bananamod 0.7"
 		}
 		"deadmanX"
 		{
