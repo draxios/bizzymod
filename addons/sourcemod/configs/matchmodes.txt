@@ -93,6 +93,10 @@
 		{
 			"name" "numbersmod 6.9.419"
 		}
+		"danmod"
+		{
+			"name" "danmod 1.1"
+		}
 		"bananamod"
 		{
 			"name" "bananamod 0.7"
