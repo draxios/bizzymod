@@ -137,6 +137,10 @@
 		{
 			"name" "bizzymod 0.8"
 		}
+		"lilithmod"
+		{
+			"name" "Lilithmod v1.69.420"
+		}
 		"flatmod"
 		{
 			"name" "flatmod 0.1"
