@@ -123,7 +123,7 @@
 		}
 		"bobbymod"
 		{
-			"name" "bobbymod 0.4"
+			"name" "bobbymod 0.5"
 		}
 		"seltzermod"
 		{
