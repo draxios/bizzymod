@@ -95,7 +95,7 @@
 		}
 		"thundermod"
 		{
-			"name" "thundermod 0.1"
+			"name" "thundermod 0.3"
 		}
 		"bananamod"
 		{
