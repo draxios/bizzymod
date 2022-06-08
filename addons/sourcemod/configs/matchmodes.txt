@@ -107,7 +107,7 @@
 		}
 		"kneemod"
 		{
-			"name" "kneemod 2.2"
+			"name" "kneemod 2.3"
 		}
 		"barrymodX"
 		{
