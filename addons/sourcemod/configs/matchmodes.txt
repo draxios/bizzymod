@@ -6,6 +6,10 @@
 		{
 			"name" "ZoneMod 2.5.1"
 		}
+		"zonemodXX"
+		{
+			"name" "ZoneMod 2.6.7"
+		}
 		"zonemod"
 		{
 			"name" "ZoneMod 2.2"
