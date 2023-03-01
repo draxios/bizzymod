@@ -1,17 +1,15 @@
 # bizzymod
-Bizzymod is the idea behind Bizzy's Playhouse L4D2 server and it's playmodes.
+Bizzymod was designed with simple idea that games should try to be fun and this is the spirit behind Bizzy's L4D2 servers and their playmodes.
 
-Bizzy's Playhouse is a simple Linux dedicated L4D2 server currently residing in Chicago.
+Bizzy's development server Bizzy's Playhouse is a simple Linux dedicated L4D2 server currently residing in Chicago.
+
+Current Server:
+74.91.113.130:27015
 
 Tickrate Settings:
 cl_cmdrate 100;cl_updaterate 100;rate 100000;cl_interp_ratio 0;cl_interp 0
 
-# Shoutout
-I want to shout out Sir, and all the hard work he has done to keep these modes alive and going in the L4D2 world.
-Most of this was based on his work and the work of others. I owe most of this to them alone.
-
 # modes
-
 ## numbersmod
 numbersmod is Bizzy's creation for numbers the numblers. It's played a lot more cause he's famous.
 

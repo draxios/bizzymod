@@ -105,9 +105,9 @@
 		{
 			"name" "bananamod 0.7"
 		}
-		"hardcoremod"
+		"zonereal"
 		{
-			"name" "hardcoremod 1.0"
+			"name" "zonemod realism 6.9"
 		}
 		"kneemod"
 		{
@@ -132,10 +132,6 @@
 		"seltzermod"
 		{
 			"name" "seltzermod 4.20"
-		}
-		"zonereal"
-		{
-			"name" "zonemod realism 6.9"
 		}
 		"busmod"
 		{

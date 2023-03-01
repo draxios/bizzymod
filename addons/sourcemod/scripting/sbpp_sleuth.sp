@@ -29,7 +29,7 @@
 #undef REQUIRE_PLUGIN
 #include <sourcebanspp>
 
-#define PLUGIN_VERSION "1.6.3"
+#define PLUGIN_VERSION "1.6.4"
 
 #define LENGTH_ORIGINAL 1
 #define LENGTH_CUSTOM 2
@@ -90,12 +90,12 @@ public OnPluginStart()
 
 public OnAllPluginsLoaded()
 {
-	CanUseSourcebans = LibraryExists("sourcebans++");
+	CanUseSourcebans = LibraryExists("sourcebans");
 }
 
 public OnLibraryAdded(const String:name[])
 {
-	if (StrEqual("sourcebans++", name))
+	if (StrEqual("sourcebans", name))
 	{
 		CanUseSourcebans = true;
 	}
@@ -103,7 +103,7 @@ public OnLibraryAdded(const String:name[])
 
 public OnLibraryRemoved(const String:name[])
 {
-	if (StrEqual("sourcebans++", name))
+	if (StrEqual("sourcebans", name))
 	{
 		CanUseSourcebans = false;
 	}

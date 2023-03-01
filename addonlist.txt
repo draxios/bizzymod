@@ -1,4 +1,0 @@
-"AddonList"
-{
-	"thesaccing_v2.vpk"		"1"
-}
