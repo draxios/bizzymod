@@ -32,7 +32,8 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"250.000000"
 		"end_dist"			"200.000000"
-		"horde_limit"		"120"
+		"max_distance"		"700"
+		"horde_limit"		"150"
 		"tank_ban_flow"
 		{
 			"One way drop"
@@ -49,7 +50,8 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"150.000000"
 		"end_dist"			"200.000000"
-		"horde_limit"		"150"
+		"max_distance"		"700"
+		"horde_limit"		"200"
 		"tank_ban_flow"
 		{
 			"Event escalators"
@@ -74,7 +76,7 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"150.000000"
 		"end_dist"			"150.000000"
-		"max_distance"		"800"
+		"max_distance"		"500"
 		"ItemLimits"
 		{
 			"pain_pills"	"0"
@@ -88,6 +90,7 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"0.000000"
 		"end_dist"			"150.000000"
+		"max_distance"		"500"
 		"witch_ban_flow"
 		{
 			"One way drop platforms"
@@ -104,7 +107,8 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"0.000000"
 		"end_dist"			"150.000000"
-		"horde_limit"		"120"
+		"max_distance"		"600"
+		"horde_limit"		"150"
 		"tank_ban_flow"
 		{
 			"Alley choke to up top"
@@ -134,7 +138,8 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"200.000000"
 		"end_dist"			"150.000000"
-		"horde_limit"		"240"
+		"max_distance"		"700"
+		"horde_limit"		"300"
 		"tank_ban_flow"
 		{
 			"Coaster Start"
@@ -160,7 +165,7 @@
 		"start_extra_dist"	"150.000000"
 		"end_dist"			"250.000000"
 		"max_distance"		"500"
-		"horde_limit"		"150"
+		"horde_limit"		"200"
 		"witch_ban_flow"
 		{
 			"Event 2nd stage"
@@ -177,6 +182,7 @@
 		"start_dist"		"100.000000"
 		"start_extra_dist"	"300.000000"
 		"end_dist"			"150.000000"
+		"max_distance"		"600"
 		"ItemLimits"
 		{
 			"pain_pills"	"0"
@@ -189,6 +195,7 @@
 		"start_dist"		"100.000000"
 		"start_extra_dist"	"0.000000"
 		"end_dist"			"200.000000"
+		"max_distance"		"500"
 		"tank_ban_flow"
 		{
 			"Before ferry (bugged spawn)"
@@ -205,7 +212,7 @@
 		"start_dist"		"100.000000"
 		"start_extra_dist"	"200.000000"
 		"end_dist"			"200.000000"
-		"max_distance"		"500"
+		"max_distance"		"600"
 	}
 	"c3m3_shantytown"
 	{
@@ -223,6 +230,7 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"200.000000"
 		"end_dist"			"200.000000"
+		"max_distance"		"700"
 		"ItemLimits"
 		{
 			"pain_pills"	"0"
@@ -277,7 +285,7 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"200.000000"
 		"end_dist"			"300.000000"
-		"max_distance"		"500"
+		"max_distance"		"600"
 		"tank_ban_flow"
 		{
 			"Elevator"
@@ -319,7 +327,7 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"350.000000"
 		"end_dist"			"100.000000"
-		"max_distance"		"400"
+		"max_distance"		"500"
 		"ItemLimits"
 		{
 			"pain_pills"	"0"
@@ -349,7 +357,8 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"0.000000"
 		"end_dist"			"250.000000"
-		"horde_limit"		"180"
+		"max_distance"		"600"
+		"horde_limit"		"250"
 		"tank_ban_flow"
 		{
 			"CEDA trailer"
@@ -366,6 +375,7 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"200.000000"
 		"end_dist"			"250.000000"
+		"max_distance"		"700"
 		"tank_ban_flow"
 		{
 			"Sewer and parking lot"
@@ -395,6 +405,7 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"200.000000"
 		"end_dist"			"350.000000"
+		"max_distance"		"700"
 		"tank_ban_flow"
 		{
 			"Last one way drop"
@@ -420,6 +431,7 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"0.000000"
 		"end_dist"			"50.000000"
+		"max_distance"		"500"
 		"tank_ban_flow"
 		{
 			"Late Alley"
@@ -436,8 +448,8 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"0.000000"
 		"end_dist"			"50.000000"
-		"max_distance"		"700"
-		"horde_limit"		"150"
+		"max_distance"		"800"
+		"horde_limit"		"200"
 		"tank_ban_flow"
 		{
 			"Sewer Drop"
@@ -459,6 +471,7 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"0.000000"
 		"end_dist"			"50.000000"
+		"max_distance"		"700"
 		"ItemLimits"
 		{
 			"pain_pills"	"0"
@@ -471,6 +484,7 @@
 		"start_dist"		"75.000000"
 		"start_extra_dist"	"0.000000"
 		"end_dist"			"50.000000"
+		"max_distance"		"700"
 	}
 	"c7m2_barge"
 	{
@@ -479,7 +493,7 @@
 		"start_dist"		"75.000000"
 		"start_extra_dist"	"0.000000"
 		"end_dist"			"50.000000"
-		"max_distance"		"600"
+		"max_distance"		"800"
 		"tank_ban_flow"
 		{
 			"Event (bugged spawn)"
@@ -496,7 +510,7 @@
 		"start_dist"		"75.000000"
 		"start_extra_dist"	"0.000000"
 		"end_dist"			"75.000000"
-		"max_distance"		"700"
+		"max_distance"		"400"
 		"ItemLimits"
 		{
 			"pain_pills"	"0"
@@ -509,6 +523,7 @@
 		"start_extra_dist"	"605.247620"
 		"end_point"			"2883.220703 2962.613037 -204.742737"
 		"end_dist"			"336.442200"
+		"max_distance"		"400"
 	}
 	"c8m2_subway"
 	{
@@ -517,6 +532,7 @@
 		"start_extra_dist"	"323.406708"
 		"end_point"			"11008.688477 4657.793945 49.151138"
 		"end_dist"			"180.738693"
+		"max_distance"		"500"
 	}
 	"c8m3_sewers"
 	{
@@ -525,6 +541,7 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"0.000000"
 		"end_dist"			"75.000000"
+		"max_distance"		"700"
 		"tank_ban_flow"
 		{
 			"Late warehouse and before one way drop"
@@ -562,7 +579,7 @@
 		"tank_z_fix"		"1"
 		"max_tank_z"		"4000.000000"
 		"tank_warpto"		"13439 15017 450"
-		"max_distance"		"500"
+		"max_distance"		"400"
 		"tank_ban_flow"
 		{
 			"Before elevator (bugged spawn)"
@@ -579,6 +596,7 @@
 		"start_extra_dist"	"421.803650"
 		"end_point"			"5675.121582 8443.446289 6142.031250"
 		"end_dist"			"100.000000"
+		"max_distance"		"600"
 		"ItemLimits"
 		{
 			"pain_pills"	"0"
@@ -599,7 +617,7 @@
 		"start_extra_dist"	"1502.202637"
 		"end_point"			"153.076584 -1426.919556 -139.968750"
 		"end_dist"			"210.283035"
-		"max_distance"		"600"
+		"max_distance"		"700"
 	}
 	"c9m2_lots"
 	{
@@ -621,6 +639,7 @@
 		"start_extra_dist"	"587.266541"
 		"end_point"			"-10784.895508 -4906.771973 318.224670"
 		"end_dist"			"403.989594"
+		"max_distance"		"400"
 		"witch_ban_flow"
 		{
 			"Ladders"
@@ -637,6 +656,7 @@
 		"start_extra_dist"	"399.942505"
 		"end_point"			"-8339.282227 -5592.915039 0.031253"
 		"end_dist"			"322.081451"
+		"max_distance"		"500"
 	}
 	"c10m3_ranchhouse"
 	{
@@ -645,6 +665,7 @@
 		"start_extra_dist"	"327.413300"
 		"end_point"			"-2673.776611 107.736259 316.727081"
 		"end_dist"			"327.768036"
+		"max_distance"		"400"
 	}
 	"c10m4_mainstreet"
 	{
@@ -653,7 +674,8 @@
 		"start_extra_dist"	"307.155029"
 		"end_point"			"1309.379883 -5479.276367 -26.821182"
 		"end_dist"			"324.451355"
-		"horde_limit"		"120"
+		"max_distance"		"600"
+		"horde_limit"		"150"
 		"tank_ban_flow"
 		{
 			"Start of event"
@@ -670,6 +692,7 @@
 		"start_extra_dist"	"317.183868"
 		"end_point"			"3805.135254 -4660.525391 -151.968750"
 		"end_dist"			"795.922058"
+		"max_distance"		"700"
 		"ItemLimits"
 		{
 			"pain_pills"	"0"
@@ -691,6 +714,7 @@
 		"start_extra_dist"	"333.408081"
 		"end_point"			"7934.695801 6070.557617 48.318222"
 		"end_dist"			"310.929138"
+		"max_distance"		"600"
 	}
 	"c11m3_garage"
 	{
@@ -699,6 +723,7 @@
 		"start_extra_dist"	"304.760986"
 		"end_point"			"-343.016815 3583.830566 332.031250"
 		"end_dist"			"187.318344"
+		"max_distance"		"700"
 	}
 	"c11m4_terminal"
 	{
@@ -724,6 +749,7 @@
 		"start_extra_dist"	"344.831299"
 		"end_point"			"-5196.772949 9229.695312 -191.968750"
 		"end_dist"			"538.437988"
+		"max_distance"		"600"
 		"ItemLimits"
 		{
 			"pain_pills"	"0"
@@ -762,8 +788,8 @@
 		"start_extra_dist"	"264.843231"
 		"end_point"			"7754.335938 -11443.834961 440.031250"
 		"end_dist"			"264.020966"
+		"horde_limit"		"150"
 		"max_distance"		"500"
-		"horde_limit"		"90"
 		"tank_ban_flow"
 		{
 			"Late spawns (bugged spawn)"
@@ -780,8 +806,8 @@
 		"start_extra_dist"	"264.932068"
 		"end_point"			"10398.775391 -310.353424 2.031253"
 		"end_dist"			"316.505157"
+		"horde_limit"		"150"
 		"max_distance"		"500"
-		"horde_limit"		"90"
 		"tank_ban_flow"
 		{
 			"Warehouse"
@@ -798,6 +824,7 @@
 		"start_extra_dist"	"315.198547"
 		"end_point"			"6972.038086 1354.824463 274.312256"
 		"end_dist"			"183.031281"
+		"max_distance"		"700"
 		"ItemLimits"
 		{
 			"pain_pills"	"0"
@@ -835,7 +862,8 @@
 		"start_extra_dist"	"604.901245"
 		"end_point"			"470.932892 8823.397461 -368.968750"
 		"end_dist"			"324.996063"
-		"horde_limit"		"120"
+		"max_distance"		"600"
+		"horde_limit"		"150"
 		"tank_ban_flow"
 		{
 			"Event"
@@ -852,6 +880,7 @@
 		"start_extra_dist"	"321.877747"
 		"end_point"			"6097.708496 -6337.365234 422.031250"
 		"end_dist"			"356.709808"
+		"max_distance"		"600"
 		"tank_ban_flow"
 		{
 			"Event and bridge descent"
@@ -868,7 +897,7 @@
 		"start_extra_dist"	"349.184357"
 		"end_point"			"-1823.846191 -1815.961670 -250.417389"
 		"end_dist"			"254.989624"
-		"max_distance"		"600"
+		"max_distance"		"500"
 	}
 	"c14m1_junkyard"
 	{
@@ -877,6 +906,7 @@
 		"start_extra_dist"	"500.000000"
 		"end_point"			"-2992.162842 10403.122070 -92.863403"
 		"end_dist"			"350.000000"
+		"max_distance"		"900"
 	}
 	"c14m2_lighthouse"
 	{
@@ -885,6 +915,7 @@
 		"start_extra_dist"	"350.000000"
 		"end_point"			"-4318.968750 3638.318115 872.031250"
 		"end_dist"			"500.000000"
+		"max_distance"		"800"
 		"ItemLimits"
 		{
 			"pain_pills"	"0"
