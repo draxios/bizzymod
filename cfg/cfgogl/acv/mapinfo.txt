@@ -422,7 +422,7 @@
 		"start_extra_dist"	"264.157257"
 		"end_point"			"3001.944092 6272.879395 494.284149"
 		"end_dist"			"130.807541"
-		"max_distance"		"500"
+		"max_distance"		"600"
 	}
 	"c6m1_riverbank"
 	{
@@ -541,7 +541,7 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"0.000000"
 		"end_dist"			"75.000000"
-		"max_distance"		"700"
+		"max_distance"		"600"
 		"tank_ban_flow"
 		{
 			"Late warehouse and before one way drop"
