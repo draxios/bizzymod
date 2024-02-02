@@ -1,6 +1,6 @@
 /*
 *	VScript File Replacer
-*	Copyright (C) 2021 Silvers
+*	Copyright (C) 2023 Silvers
 *
 *	This program is free software: you can redistribute it and/or modify
 *	it under the terms of the GNU General Public License as published by
@@ -18,12 +18,12 @@
 
 
 
-#define PLUGIN_VERSION		"1.10"
+#define PLUGIN_VERSION		"1.16"
 
 /*======================================================================================
 	Plugin Info:
 
-*	Name	:	[L4D2 & CS:GO] VScript File Replacer
+*	Name	:	[L4D2 & CS:GO & NMRiH] VScript File Replacer
 *	Author	:	SilverShot
 *	Descrp	:	Replaces any VScript file with a custom one. Modify lines or the whole file.
 *	Link	:	https://forums.alliedmods.net/showthread.php?t=318024
@@ -31,6 +31,32 @@
 
 ========================================================================================
 	Change Log:
+
+1.16 (10-Mar-2023)
+	- Changed command "sm_vs_dump" to display the number of scripts dumped.
+	- Fixed error when no VScript files or directories exist. Thanks to "Sreaper" for reporting.
+
+1.15 (20-Dec-2022)
+	- Added support for Team Fortress 2.
+	- GameData file and plugin updated.
+
+1.14 (15-Oct-2022)
+	- Added an include file for other plugins to require this plugin.
+	- Added registering the plugin library as "vscript_replacer" for plugins to detect.
+
+1.13 (15-Jul-2022)
+	- Increased buffer size. Thanks to "Psyk0tik" for reporting.
+
+1.12 (03-Jun-2022)
+	- Added support for "NMRiH" game. Thanks to "Dysphie" for the signatures.
+	- GameData file and plugin updated.
+
+1.11 (07-Oct-2021)
+	- Fixed compile errors on SourcecMod version 1.11. Thanks to "Hajitek Majitek" for reporting.
+	- Thanks to "asherkin" for helping fix.
+
+1.10a (10-Apr-2021)
+	- Minor change to "vscript_replacer.cfg" for demonstrating regex in map names. Thanks to "Tonblader" for reporting.
 
 1.10 (04-Mar-2021)
 	- Added ConVar "vscript_replacer_debug" to enable debugging with options for verbose debugging and printing to chat or server.
@@ -99,8 +125,8 @@
 // Without this server receives: "[SM] Exception reported: Instruction contained invalid parameter".
 // The largest Valve VScript file I've seen was ~280 KB.
 // If you require more please notify me, increase and recompile.
-// This is 300 KB (300 * 1024) - only used when saving/decrypting/encrypting files and cleared after.
-#define MAX_BUFFER 307200
+// This is 400 KB (400 * 1024) - only used when saving/decrypting/encrypting files and cleared after.
+#define MAX_BUFFER 409600
 #pragma dynamic MAX_BUFFER
 
 #include <sourcemod>
@@ -134,7 +160,7 @@ const int ICE_blocks = 8;
 // ====================================================================================================
 public Plugin myinfo =
 {
-	name = "[L4D2 & CS:GO] VScript File Replacer",
+	name = "[L4D2 & CS:GO & NMRiH] VScript File Replacer",
 	author = "SilverShot",
 	description = "Replaces any VScript file with a custom one. Modify lines or the whole file.",
 	version = PLUGIN_VERSION,
@@ -144,11 +170,24 @@ public Plugin myinfo =
 public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max)
 {
 	gEngine = GetEngineVersion();
-	if( gEngine != Engine_Left4Dead2 && gEngine != Engine_CSGO )
+	if( gEngine != Engine_Left4Dead2 && gEngine != Engine_CSGO && gEngine != Engine_TF2 && gEngine != Engine_SDK2013 )
 	{
 		strcopy(error, err_max, "Your game is unsupported by this plugin.");
 		return APLRes_SilentFailure;
 	}
+
+	if( gEngine == Engine_SDK2013 )
+	{
+		char sFolder[PLATFORM_MAX_PATH];
+		GetGameFolderName(sFolder, sizeof(sFolder));
+		if( strcmp(sFolder, "nmrih") )
+		{
+			strcopy(error, err_max, "Your game is unsupported by this plugin.");
+			return APLRes_SilentFailure;
+		}
+	}
+
+	RegPluginLibrary("vscript_replacer");
 
 	return APLRes_Success;
 }
@@ -234,7 +273,7 @@ public void OnMapEnd()
 // ====================================================================================================
 //					COMMANDS
 // ====================================================================================================
-public Action CmdDump(int client, int args)
+Action CmdDump(int client, int args)
 {
 	float time = GetEngineTime();
 
@@ -243,6 +282,7 @@ public Action CmdDump(int client, int args)
 	RecursiveSearchDirs(aVScriptList, "scripts/vscripts");
 
 	// Loop files and save
+	int total;
 	bool ICE;
 	char sPath[PLATFORM_MAX_PATH];
 
@@ -273,15 +313,16 @@ public Action CmdDump(int client, int args)
 		}
 		else continue;
 
+		total++;
 		SaveFile(null, "", sPath, ICE, true);
 	}
 
 	delete aVScriptList;
-	ReplyToCommand(client, "Dumped VScripts to servers /scripts/vscripts/vscripts_dump/ folder. Took %f seconds.", GetEngineTime() - time);
+	ReplyToCommand(client, "Dumped %d VScripts to servers /scripts/vscripts/vscripts_dump/ folder. Took %f seconds.", total, GetEngineTime() - time);
 	return Plugin_Handled;
 }
 
-public Action CmdEncrypt(int client, int args)
+Action CmdEncrypt(int client, int args)
 {
 	if( args != 1 )
 	{
@@ -312,7 +353,7 @@ public Action CmdEncrypt(int client, int args)
 	return Plugin_Handled;
 }
 
-public Action CmdExec(int client, int args)
+Action CmdExec(int client, int args)
 {
 	if( args != 1 )
 	{
@@ -340,7 +381,7 @@ public Action CmdExec(int client, int args)
 	return Plugin_Handled;
 }
 
-public Action CmdFile(int client, int args)
+Action CmdFile(int client, int args)
 {
 	if( args != 1 )
 	{
@@ -377,7 +418,7 @@ public Action CmdFile(int client, int args)
 	return Plugin_Handled;
 }
 
-public Action CmdList(int client, int args)
+Action CmdList(int client, int args)
 {
 	char section[PLATFORM_MAX_PATH];
 	char custom[PLATFORM_MAX_PATH];
@@ -396,7 +437,7 @@ public Action CmdList(int client, int args)
 			ReplyToCommand(client, "%d) \"%s\"", x+1, section);
 
 		/*
-		// Print script find-replace values. Uncomment variable initializations above and section below to enable. Also remove the cleanup of gOverrideValues in ResetPlugin.
+		// Print script find-replace values. Uncomment section below to enable. Also remove the cleanup of gOverrideValues in ResetPlugin.
 		// Works: but spammy with string replacements, also gOverrideValues is not required so keeping that data for this is simply wasted resources.
 		// Also requires you to remove the "Array no longer required" section from ResetPlugin to enable.
 		char key[MAX_STRING_LENGTH];
@@ -419,7 +460,7 @@ public Action CmdList(int client, int args)
 	return Plugin_Handled;
 }
 
-public Action CmdReload(int client, int args)
+Action CmdReload(int client, int args)
 {
 	float time = GetEngineTime();
 	ResetPlugin();
@@ -427,7 +468,7 @@ public Action CmdReload(int client, int args)
 	return Plugin_Handled;
 }
 
-public Action CmdListen(int client, int args)
+Action CmdListen(int client, int args)
 {
 	g_bListen = !g_bListen;
 
@@ -446,7 +487,7 @@ public Action CmdListen(int client, int args)
 // ====================================================================================================
 //					DETOUR
 // ====================================================================================================
-public MRESReturn VScriptServerCompileScript(Handle hReturn, Handle hParams)
+MRESReturn VScriptServerCompileScript(Handle hReturn, Handle hParams)
 {
 	// Load new map data
 	if( g_bLoadNewMap ) ResetPlugin();
@@ -739,7 +780,7 @@ void SaveOverrides()
 			// Regex match file
 			if( index != -1 )
 			{
-				// Only generate full vscript list once in loop
+				// Only generate full VScript list once in loop
 				if( aVScriptList == null )
 				{
 					aVScriptList = new ArrayList(ByteCountToCells(PLATFORM_MAX_PATH));
@@ -919,7 +960,9 @@ void SaveFile(ArrayList aHand, const char[] sFile, const char[] filename, bool I
 
 	// Saving to specific folders
 	if( dump )
+	{
 		ReplaceString(sPath, sizeof(sPath), "scripts/vscripts/", "scripts/vscripts/vscripts_dump/");
+	}
 	else
 	{
 		if( ReplaceString(sPath, sizeof(sPath), "scripts/vscripts/vscripts_custom/", "scripts/vscripts/vscripts_override/") == 0 )
@@ -957,6 +1000,7 @@ void RecursiveSearchDirs(ArrayList aVScriptList, const char[] sDir)
 	FileType type;
 
 	hDir = OpenDirectory(sDir, true, NULL_STRING);
+	if( !hDir ) return;
 
 	// Loop through files
 	while( hDir.GetNext(sPath, sizeof(sPath), type) )
@@ -1089,7 +1133,7 @@ bool ParseConfigFile(const char[] file)
 	return (result == SMCError_Okay);
 }
 
-public SMCResult Config_NewSection(Handle parser, const char[] section, bool quotes)
+SMCResult Config_NewSection(Handle parser, const char[] section, bool quotes)
 {
 	g_iSectionLevel++;
 
@@ -1159,7 +1203,7 @@ public SMCResult Config_NewSection(Handle parser, const char[] section, bool quo
 	return SMCParse_Continue;
 }
 
-public SMCResult Config_KeyValue(Handle parser, const char[] key, const char[] value, bool key_quotes, bool value_quotes)
+SMCResult Config_KeyValue(Handle parser, const char[] key, const char[] value, bool key_quotes, bool value_quotes)
 {
 	// Debug
 	if( g_hCvarDebug.IntValue & 4 )
@@ -1200,13 +1244,13 @@ public SMCResult Config_KeyValue(Handle parser, const char[] key, const char[] v
 	return SMCParse_Continue;
 }
 
-public SMCResult Config_EndSection(Handle parser)
+SMCResult Config_EndSection(Handle parser)
 {
 	g_iSectionLevel--;
 	return SMCParse_Continue;
 }
 
-public void Config_End(Handle parser, bool halted, bool failed)
+void Config_End(Handle parser, bool halted, bool failed)
 {
 	if( failed )
 		SetFailState("Error: Cannot load the VScripts Override config.");
@@ -1432,7 +1476,7 @@ void ICE_IceKeySet(char[] key)
 	int i, kb[4];
 
 	for( i = 0; i < 4; i++ )
-		kb[3 - i] = ((key[i*2] & 0xFF) << 8) | (key[i*2 + 1] & 0xFF);
+		kb[3 - i] = ((view_as<int>(key[i*2]) & 0xFF) << 8) | (view_as<int>(key[i*2 + 1]) & 0xFF);
 
 	ICE_scheduleBuild (kb, 0, 0);
 }
@@ -1458,7 +1502,7 @@ int ICE_roundFunc(int p, int subkey[3])
 }
 
 // Encrypt a block of 8 bytes of data.
-void ICE_encrypt(char plaintext[9], int ciphertext[9])
+void ICE_encrypt(char[] plaintext, int ciphertext[9])
 {
 	int i, l, r;
 
@@ -1485,7 +1529,7 @@ void ICE_encrypt(char plaintext[9], int ciphertext[9])
 }
 
 // Decrypt a block of 8 bytes of data.
-void ICE_decrypt(char ciphertext[9], int plaintext[9])
+void ICE_decrypt(char[] ciphertext, int plaintext[9])
 {
 	int i, l, r;
 

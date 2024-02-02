@@ -78,4 +78,46 @@
 			}
 		}
 	}
+
+	"nmrih"
+	{
+		"Keys"
+		{
+			"ICEKey"		"lREeeapA"
+		}
+
+		"Signatures"
+		{
+			/* int VScriptCompileScript(const char *pszScriptName, bool bWarnMissing) */
+			"VScriptServerCompileScript"
+			{
+				"library"		"server"
+				"linux"			"@_Z20VScriptCompileScriptPKcb"
+				"windows"		"\x55\x8B\xEC\x8B\x0D\x2A\x2A\x2A\x2A\x81\xEC\x3C\x01\x00\x00"
+				/* 55 8B EC 8B 0D ? ? ? ? 81 EC 3C 01 00 00 */
+				/* Search "Script file type does not match VM type" */
+			}
+		}
+	}
+
+	"tf"
+	{
+		"Keys"
+		{
+			"ICEKey"		"E2NcUkG2"
+		}
+
+		"Signatures"
+		{
+			/* int VScriptCompileScript(const char *pszScriptName, bool bWarnMissing) */
+			"VScriptServerCompileScript"
+			{
+				"library"		"server"
+				"linux"			"@_Z20VScriptCompileScriptPKcb"
+				"windows"		"\x55\x8B\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x81\x2A\x2A\x2A\x2A\x2A\x85\x2A\x75"
+				/* 55 8B ? 8B ? ? ? ? ? 81 ? ? ? ? ? 85 ? 75 */
+				/* Search "Script file type does not match VM type" */
+			}
+		}
+	}
 }

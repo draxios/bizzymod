@@ -12,7 +12,7 @@ public Plugin:myinfo =
     name = "L4D2 Get-Up Fix",
     author = "Blade, ProdigySim, DieTeetasse, Stabby, Jahze",
     description = "Double/no/self-clear get-up fix.",
-    version = "1.7.2",
+    version = "1.7",
     url = "http://bitbucket.org/ProdigySim/misc-sourcemod-plugins/"
 }
 
@@ -111,7 +111,6 @@ public Action:Timer_CheckClient(Handle:timer, any:tempStack) {
     decl client, oldSequence, Float:duration;
     PopStackCell(tempStack, oldSequence);
     PopStackCell(tempStack, client);
-    CloseHandle(tempStack);
     
     new SurvivorCharacter:charIndex = IdentifySurvivor(client);    
     if (charIndex == SC_NONE) return;
@@ -148,7 +147,7 @@ public Action:Timer_CheckClient(Handle:timer, any:tempStack) {
 public Action:ChargerKilled(Handle:event, const String:name[], bool:dontBroadcast) {
     new attacker = GetClientOfUserId(GetEventInt(event, "attacker"));
     
-    if (attacker <= 0 || attacker > MaxClients) {
+    if (attacker <= 0 || attacker > MaxClients+1) {
         return;
     }
     

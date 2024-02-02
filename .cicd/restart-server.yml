@@ -1,7 +1,10 @@
 parameters:
 - name: 'initPath'
   type: string
-  default: '/etc/init.d/srcds*'
+  default: '/etc/init.d/srcdsBizzymod'
+
+pool:
+  name: Local Agents
 
 stages:
 - stage: 'Restart'
@@ -10,8 +13,8 @@ stages:
     steps:  
     - task: SSH@0
       inputs:
-        sshEndpoint: '<ENDPOINT>'
+        sshEndpoint: 'Bizzymod (Dev)'
         runOptions: 'commands'
-        commands: '${{ parameters.initPath }} restart'
+        commands: 'sudo ${{ parameters.initPath }} restart'
         readyTimeout: '20000'
         interactiveSession: true
