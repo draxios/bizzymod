@@ -1,7 +1,86 @@
 "MatchModes"
-{
+{	
+	"Bizzymod Configs"
+	{
+		"numbersmod"
+		{
+			"name" "numbersmod 6.9.420"
+		}
+		"barrymod"
+		{
+			"name" "barrymod 70.0.0"
+		}
+		"spacemod"
+		{
+			"name" "spacemod -1.0"
+		}
+		"thundermod"
+		{
+			"name" "ThunderMod 0.5"
+		}
+		"acv"
+		{
+			"name" "Advanced Versus 2.0"
+		}
+		"bizzymod"
+		{
+			"name" "bizzymod 0.8"
+		}
+		"zonereal"
+		{
+			"name" "zonemod realism 6.9"
+		}
+		"kneemod"
+		{
+			"name" "kneemod 2.3"
+		}
+		"bobbymod"
+		{
+			"name" "bobbymod 0.5"
+		}
+		"seltzermod"
+		{
+			"name" "seltzermod 4.20"
+		}
+		"busmod"
+		{
+			"name" "busmod 69.69.69"
+		}
+		"bananamod"
+		{
+			"name" "bananamod 0.7"
+		}
+		"heizemod"
+		{
+			"name" "heizemod 1.0"
+		}
+		"flatmod"
+		{
+			"name" "flatmod 0.1"
+		}
+		"onemod"
+		{
+			"name" "OneMod 1.3"
+		}
+		"powermod"
+		{
+			"name" "powermod 4.0"
+		}
+		"invokemod"
+		{
+			"name" "invokemod 0.0.69.2"
+		}
+		"deadmanX"
+		{
+			"name" "deadman 6.1"
+		}
+	}
 	"ZoneMod Configs"
 	{
+		"zonemod"
+		{
+			"name" "ZoneMod"
+		}
 		"zonemodX"
 		{
 			"name" "ZoneMod 2.5.1"
@@ -10,13 +89,9 @@
 		{
 			"name" "ZoneMod 2.6.7"
 		}
-		"zonemod"
-		{
-			"name" "ZoneMod 2.2"
-		}
 		"zoneretro"
 		{
-			"name" "ZoneMod Retro 2.2"
+			"name" "ZoneMod Retro"
 		}
 		"zonemodold"
 		{
@@ -33,6 +108,32 @@
 		"zm1v1"
 		{
 			"name" "1v1 ZoneMod"
+		}
+	}
+	"Acemod Revamped Configs"
+	{
+		"acemodrv"
+		{
+			"name" "Acemod RV 1.3"
+		}
+		"amrv3v3"
+		{
+			"name" "3v3 Acemod RV"
+		}
+		"amrv2v2"
+		{
+			"name" "2v2 Acemod RV"
+		}
+		"amrv1v1"
+		{
+			"name" "1v1 Acemod RV"
+		}
+	}
+	"NeoMod Configs"
+	{
+		"neomod"
+		{
+			"name" "NeoMod Tourney 0.4a"
 		}
 	}
 	"NextMod Configs"
@@ -61,6 +162,25 @@
 			"name" "Promod Elite 1.1"
 		}
 	}
+	"Acemod Revamped Configs"
+	{
+		"acemodrv"
+		{
+			"name" "Acemod RV 1.3"
+		}
+		"amrv3v3"
+		{
+			"name" "3v3 Acemod RV"
+		}
+		"amrv2v2"
+		{
+			"name" "2v2 Acemod RV"
+		}
+		"amrv1v1"
+		{
+			"name" "1v1 Acemod RV"
+		}
+	}
 	"EQ Configs"
 	{
 		"eq"
@@ -87,89 +207,11 @@
 			"name" "Apex 1.1.2"
 		}
 	}
-	"Bizzymod Configs"
-	{
-		"numbersmodX"
-		{
-			"name" "numbersmod 6.9.420"
-		}
-		"numbersmod"
-		{
-			"name" "numbersmod 6.9.419"
-		}
-		"thundermod"
-		{
-			"name" "ThunderMod 0.5"
-		}
-		"bananamod"
-		{
-			"name" "bananamod 0.7"
-		}
-		"zonereal"
-		{
-			"name" "zonemod realism 6.9"
-		}
-		"kneemod"
-		{
-			"name" "kneemod 2.3"
-		}
-		"barrymodX"
-		{
-			"name" "barrymod 70.0.0"
-		}
-		"barrymod"
-		{
-			"name" "barrymod 69.0.0"
-		}
-		"deadmanX"
-		{
-			"name" "deadman 6.1"
-		}
-		"bobbymod"
-		{
-			"name" "bobbymod 0.5"
-		}
-		"seltzermod"
-		{
-			"name" "seltzermod 4.20"
-		}
-		"busmod"
-		{
-			"name" "busmod 69.69.69"
-		}
-		"bizzymod"
-		{
-			"name" "bizzymod 0.8"
-		}
-		"flatmod"
-		{
-			"name" "flatmod 0.1"
-		}
-		"spacemod"
-		{
-			"name" "spacemod -1.0"
-		}
-		"onemod"
-		{
-			"name" "OneMod 1.3"
-		}
-		"powermod"
-		{
-			"name" "powermod 4.0"
-		}
-		"invokemod"
-		{
-			"name" "invokemod 0.0.69.2"
-		}
-
-
-	}
-
 	"Hunters Configs"
 	{
 		"zonehunters"
 		{
-			"name" "ZoneHunters 2.2"
+			"name" "ZoneHunters"
 		}
 		"zh3v3"
 		{
