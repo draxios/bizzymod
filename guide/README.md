@@ -8,7 +8,7 @@
 This purpose of this document is to make it very easy to get Optimized Servers ready for people interested in hosting their own servers for L4D2.  Most (if not all) server hosts will refuse to assist with the installation of 3rd party software so this document aims to help you do everything from start to finish without needing outside assistance.  
 
 > **Recommended Server Specifications:**
-* **OS:** Ubuntu **18.04 or earlier**.  Newer versions of Ubuntu appear to have blood splatter on your screen if you shoot a zombie that is far away.
+* **OS:** Ubuntu
 * A Dedicated Server Space, do not use shared resources. (A proper VDS will work just fine)
 * 1 core per server, 1GB Memory per server
   * Gameservers are usually hosted in a Shared Environment, thus not recommended. 
@@ -25,7 +25,7 @@ This purpose of this document is to make it very easy to get Optimized Servers r
 > **Initial Server Install/Connection:**  
 > This part of the Project will focus on preparing your dedicated Server/VDS for L4D2.  
 
-Login to your webhosts admin panel and ensure you are using Ubuntu **18.04 or earlier**.  You should have had an option to do this during the order process, but if not most hosts will have an intuitive admin panel to allow you to do this.  I used GCoreLabs to set up a server whilst writing this guide, and they have a 'reinstall' option under "[Management > Virtual Machines](https://imgur.com/A7kRTyO)".
+Login to your webhosts admin panel and ensure you are using Ubuntu **20.04 or newer**.  You should have had an option to do this during the order process, but if not most hosts will have an intuitive admin panel to allow you to do this.  I used GCoreLabs to set up a server whilst writing this guide, and they have a 'reinstall' option under "[Management > Virtual Machines](https://imgur.com/A7kRTyO)".
 
 For the next part, you will need to make use of an SSH Client such as [Putty](http://www.putty.org/).
 
@@ -58,8 +58,8 @@ apt-get install screen**
 **wget http://media.steampowered.com/installer/steamcmd_linux.tar.gz  
 tar -xvzf steamcmd_linux.tar.gz  
 ./steamcmd.sh  
-login anonymous  
 force_install_dir ./Steam/steamapps/common/l4d2  
+login anonymous  
 app_update 222860 validate  
 quit**
 
@@ -112,8 +112,8 @@ You can't as he hasn't made it public.  You can use the one created by LuckyLock
 You will need to update your server.  
   
 ./steamcmd.sh  
-login anonymous  
 force_install_dir ./Steam/steamapps/common/l4d2  
+login anonymous  
 app_update 222860 validate  
 quit  
 
