@@ -5,6 +5,9 @@
 		"numbersmod"
 		{
 			"name" "numbersmod 6.9.420"
+		"pissmod"
+		{
+			"name" "pissmod 0.0"
 		}
 		"barrymod"
 		{
