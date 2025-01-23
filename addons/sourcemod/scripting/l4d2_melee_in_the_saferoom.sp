@@ -204,7 +204,7 @@ public void OnPluginStart()
 {
 	// Create Convars
 	CreateConVar( "l4d2_MITSR_Version",		VERSION, "The version of Melee In The Saferoom"); 
-	Cvar_Enabled			= CreateConVar( "l4d2_MITSR_Enabled",			"0", "Should the plugin be enabled", _, true, 0.0, true, 1.0);
+	Cvar_Enabled			= CreateConVar( "l4d2_MITSR_Enabled",			"1", "Should the plugin be enabled", _, true, 0.0, true, 1.0);
 	Cvar_WeaponSpawnType	= CreateConVar( "l4d2_MITSR_Spawn_Type",		"2", "0 = Custom list, 1 = Random Weapon and 2 = Map based weapons.", _, true, 0.0, true, 2.0);
 	Cvar_WeaponRandomAmount	= CreateConVar( "l4d2_MITSR_Random_Amount",		"10","Number of weapons to spawn if l4d2_MITSR_Spawn_Type is set to 1.", _, true, 0.0, true, 10.0);
 	Cvar_MapBaseAmount		= CreateConVar( "l4d2_MITSR_MapBase_Amount",	"1", "Number multiple if l4d2_MITSR_Spawn_Type is set to 2.", _, true, 0.0, true, 4.0);
@@ -217,10 +217,10 @@ public void OnPluginStart()
 	Cvar_Items[4]			= CreateConVar( "l4d2_MITSR_FireAxe",			"1", "Number of fireaxes to spawn (l4d2_MITSR_Spawn_Type must be 0)", _, true, 0.0, true, 10.0);
 	Cvar_Items[5]			= CreateConVar( "l4d2_MITSR_FryingPan",			"1", "Number of frying pans to spawn (l4d2_MITSR_Spawn_Type must be 0)", _, true, 0.0, true, 10.0);
 	Cvar_Items[6]			= CreateConVar( "l4d2_MITSR_GolfClub",			"1", "Number of golf clubs to spawn (l4d2_MITSR_Spawn_Type must be 0)", _, true, 0.0, true, 10.0);
-	Cvar_Items[7]			= CreateConVar( "l4d2_MITSR_Knife",				"1", "Number of knifes to spawn (l4d2_MITSR_Spawn_Type must be 0)", _, true, 0.0, true, 10.0);
+	Cvar_Items[7]			= CreateConVar( "l4d2_MITSR_Knife",			"1", "Number of knifes to spawn (l4d2_MITSR_Spawn_Type must be 0)", _, true, 0.0, true, 10.0);
 	Cvar_Items[8]			= CreateConVar( "l4d2_MITSR_Katana",			"1", "Number of katanas to spawn (l4d2_MITSR_Spawn_Type must be 0)", _, true, 0.0, true, 10.0);
 	Cvar_Items[9]			= CreateConVar( "l4d2_MITSR_Machete",			"1", "Number of machetes to spawn (l4d2_MITSR_Spawn_Type must be 0)", _, true, 0.0, true, 10.0);
-	Cvar_Items[10]			= CreateConVar( "l4d2_MITSR_Tonfa",				"1", "Number of tonfas to spawn (l4d2_MITSR_Spawn_Type must be 0)", _, true, 0.0, true, 10.0);
+	Cvar_Items[10]			= CreateConVar( "l4d2_MITSR_Tonfa",			"1", "Number of tonfas to spawn (l4d2_MITSR_Spawn_Type must be 0)", _, true, 0.0, true, 10.0);
 	Cvar_Items[11]			= CreateConVar( "l4d2_MITSR_PitchFork",			"1", "Number of pitchforks to spawn (l4d2_MITSR_Spawn_Type must be 0)", _, true, 0.0, true, 10.0);
 	Cvar_Items[12]			= CreateConVar( "l4d2_MITSR_Shovel",			"1", "Number of shovels to spawn (l4d2_MITSR_Spawn_Type must be 0)", _, true, 0.0, true, 10.0);
 	
