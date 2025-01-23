@@ -43,7 +43,7 @@ public Plugin:myinfo =
 
 public OnPluginStart()
 {
-	hEnabled = CreateConVar("l4d2_temphealthmedkits_enable", "0", "Enable temp health medkits");
+	hEnabled = CreateConVar("l4d2_temphealthmedkits_enable", "1", "Enable temp health medkits");
 	HookConVarChange(hEnabled, Enabled_Change);
 	
 	bEnabled = GetConVarBool(hEnabled);
