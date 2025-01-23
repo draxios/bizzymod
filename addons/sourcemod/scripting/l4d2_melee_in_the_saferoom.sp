@@ -204,7 +204,7 @@ public void OnPluginStart()
 {
 	// Create Convars
 	CreateConVar( "l4d2_MITSR_Version",		VERSION, "The version of Melee In The Saferoom"); 
-	Cvar_Enabled			= CreateConVar( "l4d2_MITSR_Enabled",			"1", "Should the plugin be enabled", _, true, 0.0, true, 1.0);
+	Cvar_Enabled			= CreateConVar( "l4d2_MITSR_Enabled",			"0", "Should the plugin be enabled", _, true, 0.0, true, 1.0);
 	Cvar_WeaponSpawnType	= CreateConVar( "l4d2_MITSR_Spawn_Type",		"2", "0 = Custom list, 1 = Random Weapon and 2 = Map based weapons.", _, true, 0.0, true, 2.0);
 	Cvar_WeaponRandomAmount	= CreateConVar( "l4d2_MITSR_Random_Amount",		"10","Number of weapons to spawn if l4d2_MITSR_Spawn_Type is set to 1.", _, true, 0.0, true, 10.0);
 	Cvar_MapBaseAmount		= CreateConVar( "l4d2_MITSR_MapBase_Amount",	"1", "Number multiple if l4d2_MITSR_Spawn_Type is set to 2.", _, true, 0.0, true, 4.0);
