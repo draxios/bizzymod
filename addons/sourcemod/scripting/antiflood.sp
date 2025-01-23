@@ -57,7 +57,7 @@ ConVar sm_flood_time;									/* Handle to sm_flood_time convar */
 float max_chat;
 public void OnPluginStart()
 {
-	sm_flood_time = CreateConVar("sm_flood_time", "0.75", "Amount of time allowed between chat messages");
+	sm_flood_time = CreateConVar("sm_flood_time", "0.0", "Amount of time allowed between chat messages");
 }
 
 public void OnClientPutInServer(int client)
