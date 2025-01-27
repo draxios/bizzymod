@@ -1,4 +1,5 @@
 "MatchModes"
+{
 	"Game Modes"
 	{
 		"numbersmod"
