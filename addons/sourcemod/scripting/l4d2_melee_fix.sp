@@ -23,7 +23,7 @@ public APLRes AskPluginLoad2(Handle plugin, bool late, char[] error, int errMax)
 
 public void OnPluginStart()
 {
-    hCvarDmg = CreateConVar("melee_damage_charger", "0.0", "Damage dealt to Chargers per swing, 0.0 to leave in default behaviour");
+    hCvarDmg = CreateConVar("melee_damage_charger", "0", "Damage dealt to Chargers per swing, 0.0 to leave in default behaviour");
     fCvarDmg = GetConVarFloat(hCvarDmg);
     HookConVarChange(hCvarDmg, cvarChanged);
 
