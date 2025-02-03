@@ -14,9 +14,9 @@
 		{
 			"name" "barrymod 70.0.0"
 		}
-		"spacemod"
+		"kneemod"
 		{
-			"name" "spacemod -1.0"
+			"name" "kneemod 2.3"
 		}
 		"thundermod"
 		{
@@ -36,7 +36,7 @@
 		}
 		"kneemod"
 		{
-			"name" "kneemod 2.3"
+			"name" "spacemod -1.0"
 		}
 		"bobbymod"
 		{
