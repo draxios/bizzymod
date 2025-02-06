@@ -71,7 +71,7 @@ public void OnPluginStart()
 	
 	( g_ConVarEnable 				= CreateConVar("sm_restart_empty_enable", 					"1", 	"Enable plugin (1 - On / 0 - Off)", CVAR_FLAGS)).AddChangeHook(OnCvarChanged);
 	( g_ConVarMethod 				= CreateConVar("sm_restart_empty_method", 					"2", 	"When server is empty, what to do? 1 - _restart, 2 - crash (use if method # 1 is not work), 3 - just change map", CVAR_FLAGS)).AddChangeHook(OnCvarChanged);
-	( g_ConVarDelay 				= CreateConVar("sm_restart_empty_delay", 					"10", 	"Grace period (in sec.) waiting for new player to join until actually decide to restart the server", CVAR_FLAGS)).AddChangeHook(OnCvarChanged);
+	( g_ConVarDelay 				= CreateConVar("sm_restart_empty_delay", 					"5", 	"Grace period (in sec.) waiting for new player to join until actually decide to restart the server", CVAR_FLAGS)).AddChangeHook(OnCvarChanged);
 	( g_ConVarUnloadExtNum 			= CreateConVar("sm_restart_empty_unload_ext_num", 			"0", 	"If you have Accelerator extension, you need specify here order number of this extension in the list: sm exts list", CVAR_FLAGS)).AddChangeHook(OnCvarChanged);
 	( g_ConVarMinPeriodHours		= CreateConVar("sm_restart_empty_min_period", 				"0", 	"Minimum period (in hours) this plugin should wait before the next restarting is allowed (0 - disable, 24 - allow once per day)", CVAR_FLAGS)).AddChangeHook(OnCvarChanged);
 	( g_ConVarLimitRebootHourStart 	= CreateConVar("sm_restart_empty_limit_hour_start", 		"0", 	"Allow rebooting to be started from this hour only (paired with \"*_end\" ConVar)", CVAR_FLAGS)).AddChangeHook(OnCvarChanged);
