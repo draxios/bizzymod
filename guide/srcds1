@@ -32,7 +32,7 @@ DAEMON="$DIR/srcds_run"
 #
 #####################################################################################################################
 
-# The current settings will start the Server on 100 Tick on Dead Center Map 1 - Hotel.
+# The current settings will start the Server on 120 Tick on The Passing Map 1 - Riverbank.
 SVNUM=1
 IP=1.3.3.7
 PORT=27015
