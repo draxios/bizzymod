@@ -17,7 +17,7 @@ new Handle:hCount;
 public OnPluginStart()
 {
 	HookEvent("spawner_give_item", Event_SpawnerGiveItem);
-	hCount = CreateConVar("l4d2_usecount", "64", "How many times a weapon spawn can be used before it will be removed.")
+	hCount = CreateConVar("l4d2_usecount", "2147483647", "How many times a weapon spawn can be used before it will be removed.")
 }
 
 public OnMapStart()
