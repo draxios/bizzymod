@@ -6,9 +6,13 @@
 		{
 			"name" "numbersmod 6.9.420"
 		}
+		"surfmod"
+		{
+			"name" "surfmod 6.9.420"
+		}
 		"pissmod"
 		{
-			"name" "pissmod 0.0"
+			"name" "pissmod 6.9.420"
 		}
 		"barrymod"
 		{
