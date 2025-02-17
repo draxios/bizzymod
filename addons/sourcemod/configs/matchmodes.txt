@@ -18,29 +18,17 @@
 		{
 			"name" "barrymod 70.0.0"
 		}
-		"kneemod"
-		{
-			"name" "kneemod 2.3"
-		}
-		"thundermod"
-		{
-			"name" "ThunderMod 0.5"
-		}
-		"acv"
-		{
-			"name" "Advanced Versus 2.0"
-		}
 		"bizzymod"
 		{
 			"name" "bizzymod 0.8"
 		}
-		"zonereal"
-		{
-			"name" "zonemod realism 6.9"
-		}
 		"kneemod"
 		{
-			"name" "spacemod -1.0"
+			"name" "kneemod 2.3"
+		}
+		"busmod"
+		{
+			"name" "busmod 69.69.69"
 		}
 		"bobbymod"
 		{
@@ -50,13 +38,13 @@
 		{
 			"name" "seltzermod 4.20"
 		}
-		"busmod"
-		{
-			"name" "busmod 69.69.69"
-		}
 		"bananamod"
 		{
 			"name" "bananamod 0.7"
+		}
+		"spacemod"
+		{
+			"name" "spacemod -1.0"
 		}
 		"heizemod"
 		{
@@ -111,7 +99,7 @@
 		}
 		"acv"
 		{
-			"name" "Advanced Versus 2.0"
+			"name" "Advanced Versus 2.5"
 		}
 		"bizzymod"
 		{
@@ -168,6 +156,18 @@
 	}
 	"ZoneMod Configs"
 	{
+		"thundermod"
+		{
+			"name" "ThunderMod 1.0"
+		}
+		"acv"
+		{
+			"name" "Advanced Versus 2.5"
+		}
+		"zonereal"
+		{
+			"name" "zonemod realism 6.9"
+		}
 		"zonemod"
 		{
 			"name" "ZoneMod"
