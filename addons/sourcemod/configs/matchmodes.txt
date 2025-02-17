@@ -6,25 +6,25 @@
 		{
 			"name" "numbersmod 6.9.420"
 		}
-		"surfmod"
+		"Surfmod"
 		{
-			"name" "surfmod 6.9.420"
+			"name" "Surfmod 6.9.420"
 		}
-		"pissmod"
+		"Pissmod"
 		{
 			"name" "pissmod 6.9.420"
 		}
-		"barrymod"
+		"Barrymod"
 		{
-			"name" "barrymod 70.0.0"
+			"name" "Barrymod 70.0.0"
 		}
-		"bizzymod"
+		"Bizzymod"
 		{
-			"name" "bizzymod 0.8"
+			"name" "Bizzymod 1.0"
 		}
-		"kneemod"
+		"Kneemod"
 		{
-			"name" "kneemod 2.3"
+			"name" "Kneemod 2.5"
 		}
 		"busmod"
 		{
@@ -40,7 +40,7 @@
 		}
 		"bananamod"
 		{
-			"name" "bananamod 0.7"
+			"name" "bananamod 0.75"
 		}
 		"spacemod"
 		{
@@ -83,35 +83,23 @@
 		}
 		"pissmod"
 		{
-			"name" "pissmod 0.0"
+			"name" "pissmod 6.9.420"
 		}
 		"barrymod"
 		{
 			"name" "barrymod 70.0.0"
 		}
-		"spacemod"
-		{
-			"name" "spacemod -1.0"
-		}
-		"thundermod"
-		{
-			"name" "ThunderMod 0.5"
-		}
-		"acv"
-		{
-			"name" "Advanced Versus 2.5"
-		}
 		"bizzymod"
 		{
 			"name" "bizzymod 0.8"
 		}
-		"zonereal"
-		{
-			"name" "zonemod realism 6.9"
-		}
 		"kneemod"
 		{
 			"name" "kneemod 2.3"
+		}
+		"busmod"
+		{
+			"name" "busmod 69.69.69"
 		}
 		"bobbymod"
 		{
@@ -121,13 +109,13 @@
 		{
 			"name" "seltzermod 4.20"
 		}
-		"busmod"
-		{
-			"name" "busmod 69.69.69"
-		}
 		"bananamod"
 		{
 			"name" "bananamod 0.7"
+		}
+		"spacemod"
+		{
+			"name" "spacemod -1.0"
 		}
 		"heizemod"
 		{
