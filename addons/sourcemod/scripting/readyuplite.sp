@@ -1,4 +1,4 @@
-﻿#pragma semicolon 1
+#pragma semicolon 1
 #pragma newdecls required
 
 #include <sourcemod>
@@ -202,10 +202,10 @@ public void OnPluginStart()
 	l4d_ready_cfg_name			= CreateConVar("l4d_ready_cfg_name", "", "Configname to display on the ready-up panel", FCVAR_NOTIFY|FCVAR_PRINTABLEONLY);
 	l4d_ready_server_cvar		= CreateConVar("l4d_ready_server_cvar", "sn_main_name", "ConVar to retrieve the server name for displaying on the ready-up panel", FCVAR_NOTIFY|FCVAR_PRINTABLEONLY);
 	l4d_ready_disable_spawns	= CreateConVar("l4d_ready_disable_spawns", "0", "Prevent SI from having spawns during ready-up", FCVAR_NOTIFY, true, 0.0, true, 1.0);
-	l4d_ready_survivor_freeze	= CreateConVar("l4d_ready_survivor_freeze", "1", "Freeze the survivors during ready-up.  When unfrozen they are unable to leave the saferoom but can move freely inside", FCVAR_NOTIFY, true, 0.0, true, 1.0);
-	l4d_ready_max_players		= CreateConVar("l4d_ready_max_players", "32", "Maximum number of players to show on the ready-up panel.", FCVAR_NOTIFY, true, 0.0, true, MAXPLAYERS+1.0);
+	l4d_ready_survivor_freeze	= CreateConVar("l4d_ready_survivor_freeze", "0", "Freeze the survivors during ready-up.  When unfrozen they are unable to leave the saferoom but can move freely inside", FCVAR_NOTIFY, true, 0.0, true, 1.0);
+	l4d_ready_max_players		= CreateConVar("l4d_ready_max_players", "33", "Maximum number of players to show on the ready-up panel.", FCVAR_NOTIFY, true, 0.0, true, MAXPLAYERS+1.0);
 	l4d_ready_delay				= CreateConVar("l4d_ready_delay", "3", "Number of seconds to count down before the round goes live.", FCVAR_NOTIFY, true, 0.0);
-	l4d_ready_force_extra		= CreateConVar("l4d_ready_force_extra", "2", "Number of seconds added to the duration of live count down.", FCVAR_NOTIFY, true, 0.0);
+	l4d_ready_force_extra		= CreateConVar("l4d_ready_force_extra", "0", "Number of seconds added to the duration of live count down.", FCVAR_NOTIFY, true, 0.0);
 	l4d_ready_autostart_delay	= CreateConVar("l4d_ready_autostart_delay", "3", "Number of seconds to count down before auto-start kicks in.", FCVAR_NOTIFY, true, 0.0);
 	l4d_ready_autostart_wait	= CreateConVar("l4d_ready_autostart_wait", "15", "Number of seconds to wait for connecting players before auto-start is forced.", FCVAR_NOTIFY, true, 0.0);
 	l4d_ready_enable_sound		= CreateConVar("l4d_ready_enable_sound", "1", "Enable sound during autostart & countdown & on live", FCVAR_NOTIFY, true, 0.0, true, 1.0);
