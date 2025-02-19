@@ -6,25 +6,25 @@
 		{
 			"name" "numbersmod 6.9.420"
 		}
-		"Surfmod"
+		"surfmod"
 		{
-			"name" "Surfmod 6.9.420"
+			"name" "surfmod 6.9.420"
 		}
-		"Pissmod"
+		"pissmod"
 		{
 			"name" "pissmod 6.9.420"
 		}
-		"Barrymod"
+		"barrymod"
 		{
-			"name" "Barrymod 70.0.0"
+			"name" "barrymod 70.0.0"
 		}
-		"Bizzymod"
+		"bizzymod"
 		{
-			"name" "Bizzymod 1.0"
+			"name" "bizzymod 1.0"
 		}
-		"Kneemod"
+		"kneemod"
 		{
-			"name" "Kneemod 2.5"
+			"name" "kneemod 2.5"
 		}
 		"busmod"
 		{
