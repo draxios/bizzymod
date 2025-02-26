@@ -77,7 +77,7 @@ public void OnPluginStart()
 	// CVARS
 	g_hCvarAllow = CreateConVar(	"l4d_witch_damage_allow",			"1",					"0=Plugin off, 1=Plugin on.", CVAR_FLAGS );
 	g_hCvarDamage = CreateConVar(	"l4d_witch_damage_damage",			"100",					"Damage applied when survivor is not incapped. Scaled with scale cvar depending on the game difficulty.", CVAR_FLAGS );
-	g_hCvarIncap = CreateConVar(	"l4d_witch_damage_incapped",		"30",					"Damage applied when survivor is incapped. Scaled with scale cvar depending on the game difficulty.", CVAR_FLAGS );
+	g_hCvarIncap = CreateConVar(	"l4d_witch_damage_incapped",		"25",					"Damage applied when survivor is incapped. Scaled with scale cvar depending on the game difficulty.", CVAR_FLAGS );
 	g_hCvarScale = CreateConVar(	"l4d_witch_damage_scale",			"100,100,100,100",		"Scales damage depending on game difficulty, each comma separated: 1st = Easy. 2nd = Normal. 3rd = Advanced. 4th = Expert.", CVAR_FLAGS );
 	g_hCvarModes = CreateConVar(	"l4d_witch_damage_modes",			"",						"Turn on the plugin in these game modes, separate by commas (no spaces). (Empty = all).", CVAR_FLAGS );
 	g_hCvarModesOff = CreateConVar(	"l4d_witch_damage_modes_off",		"",						"Turn off the plugin in these game modes, separate by commas (no spaces). (Empty = none).", CVAR_FLAGS );

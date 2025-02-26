@@ -49,7 +49,7 @@ public Plugin myinfo =
 
 public void OnPluginStart()
 {
-	cvarPluginEnable       = CreateConVar("boss_spawn", "1", "0:Disable, 1:Enable Plugin", FCVAR_NONE, true, 0.0, true, 1.0 );
+	cvarPluginEnable       = CreateConVar("boss_spawn", "0", "0:Disable, 1:Enable Plugin", FCVAR_NONE, true, 0.0, true, 1.0 );
 	cvarInterval           = CreateConVar("boss_spawn_interval", "0.5", "Set interval time check to spawn", FCVAR_NONE, true, 0.1);
 	cvarTanks              = CreateConVar("boss_spawn_tanks", "1", "Set Tanks to spawn simultaneously");
 	cvarTanksRandom        = CreateConVar("boss_spawn_tanks_rng", "0", "Set max random Tanks to spawn simultaneously, 0:Disable Random value");

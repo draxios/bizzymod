@@ -51,10 +51,10 @@ public OnPluginStart()
 
 	CreateConVar("l4d2_boomerbitchslap_version", PLUGIN_VERSION, " L4D2 Boomer Bitch Slap Plugin Version ", CVAR_FLAGS|FCVAR_DONTRECORD);
 	
-	cvar_enabled = CreateConVar("l4d2_boomerbitchslap_enabled", "1", " Enable/Disable the Boomer Bitch Slap Plugin ", CVAR_FLAGS);
-	cvar_slapPower = CreateConVar("l4d2_boomerbitchslap_power", "150.0", " How much Force is applied to the victim ", CVAR_FLAGS);
-	cvar_slapCooldownTime = CreateConVar("l4d2_boomerbitchslap_cooldown", "15.0", " How many seconds before Boomer can Slap again ", CVAR_FLAGS);
-	cvar_slapAnnounceMode = CreateConVar("l4d2_boomerbitchslap_announce", "1", " Do Slaps get announced in the Chat Area ", CVAR_FLAGS);
+	cvar_enabled = CreateConVar("l4d2_boomerbitchslap_enabled", "0", " Enable/Disable the Boomer Bitch Slap Plugin ", CVAR_FLAGS);
+	cvar_slapPower = CreateConVar("l4d2_boomerbitchslap_power", "100.0", " How much Force is applied to the victim ", CVAR_FLAGS);
+	cvar_slapCooldownTime = CreateConVar("l4d2_boomerbitchslap_cooldown", "10.0", " How many seconds before Boomer can Slap again ", CVAR_FLAGS);
+	cvar_slapAnnounceMode = CreateConVar("l4d2_boomerbitchslap_announce", "0", " Do Slaps get announced in the Chat Area ", CVAR_FLAGS);
 	cvar_slapOffLedges = CreateConVar("l4d2_boomerbitchslap_ledgeslap", "0", " Enable/Disable Slapping hanging people off ledges ", CVAR_FLAGS);
 	
 	AutoExecConfig(true, "l4d2_boomerbitchslap");

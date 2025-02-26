@@ -38,11 +38,11 @@ public OnPluginStart()
 		SetFailState( "Jockey pounce damage supports Left 4 Dead 2 only" );
 
 	g_hEnabled = CreateConVar( "l4d2_JockeyPounce_enabled", "1", "Should the plugin be enabled", FCVAR_PLUGIN );
-	g_hBlindAmount = CreateConVar( "l4d2_JockeyPounce_blind", "150", "How much the jockey should blind the player (0: non, 255:completely)", FCVAR_PLUGIN );
+	g_hBlindAmount = CreateConVar( "l4d2_JockeyPounce_blind", "0", "How much the jockey should blind the player (0: non, 255:completely)", FCVAR_PLUGIN );
 	g_hPounceScale = CreateConVar( "l4d2_JockeyPounce_scale", "1.0", "Scale how much damage the pounce does (e.g. 0.5 will half the default damage, 5 will make it 5 times more powerfull)", FCVAR_PLUGIN );
 	g_hPounceCap = CreateConVar( "l4d2_JockeyPounce_cap", "100", "Cap of the maximum damage a pounce can do", FCVAR_PLUGIN );
 	g_hPounceMinShow = CreateConVar( "l4d2_JockeyPounce_minshow", "3", "Minimum damage a pounce should do to show the pounce message", FCVAR_PLUGIN );
-	g_hPounceDisplay = CreateConVar( "l4d2_JockeyPounce_display", "2", "How message should be shown, 0 - Disabled, 1 - Chat message, 2 - Hint Message", FCVAR_PLUGIN );
+	g_hPounceDisplay = CreateConVar( "l4d2_JockeyPounce_display", "0", "How message should be shown, 0 - Disabled, 1 - Chat message, 2 - Hint Message", FCVAR_PLUGIN );
 	g_hPounceDisplayMax = CreateConVar( "l4d2_JockeyPounce_display_max", "0", "Show the damagecap in the display message", FCVAR_PLUGIN );
 	g_hPounceStoreStats = CreateConVar( "l4d2_JockeyPounce_store_stats", "1", "Save the pounces in a database", FCVAR_PLUGIN );
 	AutoExecConfig( true, "[L4D2]JockeyPounce" );

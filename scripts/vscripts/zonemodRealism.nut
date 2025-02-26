@@ -8,8 +8,8 @@
  
  	cm_AllowPillConversion = 0
  
- 	ZombieGhostDelayMin = 17
- 	ZombieGhostDelayMax = 17
+ 	ZombieGhostDelayMin = 14
+ 	ZombieGhostDelayMax = 16
  
  	weaponsToRemove =
  	{
