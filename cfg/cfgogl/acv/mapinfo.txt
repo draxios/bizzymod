@@ -13,15 +13,15 @@
 		"max_distance"		"400"
 		"tank_ban_flow"
 		{
-			"Before elevator exit"
-			{
-				"min"		"38"
-				"max"		"79"
-			}
-			"Early spawns"
-			{
-				"min"		"0"
-				"max"		"24"
+				"Before elevator exit"
+				{
+					"min"		"38"
+					"max"		"79"
+				}
+				"Early spawns"
+				{
+					"min"		"0"
+					"max"		"24"
 			}
 		}
 	}
@@ -423,6 +423,13 @@
 		"end_point"			"3001.944092 6272.879395 494.284149"
 		"end_dist"			"130.807541"
 		"max_distance"		"600"
+		{
+			"Broken flow"
+			{
+				"min"		"15"
+				"max"		"100"
+			}
+		}
 	}
 	"c6m1_riverbank"
 	{
@@ -476,6 +483,7 @@
 		{
 			"pain_pills"	"0"
 		}
+
 	}
 	"c7m1_docks"
 	{
