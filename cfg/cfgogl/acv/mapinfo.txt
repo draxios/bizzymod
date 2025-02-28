@@ -426,7 +426,7 @@
 		{
 			"Broken flow"
 			{
-				"min"		"15"
+				"min"		"16"
 				"max"		"100"
 			}
 		}
