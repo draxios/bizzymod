@@ -13,15 +13,15 @@
 		"max_distance"		"400"
 		"tank_ban_flow"
 		{
-				"Before elevator exit"
-				{
-					"min"		"38"
-					"max"		"79"
-				}
-				"Early spawns"
-				{
-					"min"		"0"
-					"max"		"24"
+			"Early spawns"
+			{
+				"min"		"0"
+				"max"		"79"
+			}
+			"Before elevator exit"
+			{
+				"min"		"38"
+				"max"		"79"
 			}
 		}
 	}
