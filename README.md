@@ -4,10 +4,10 @@ Bizzymod was designed with simple idea that games should try to be fun and this 
 Bizzy's development server Bizzy's Playhouse is a simple Linux dedicated L4D2 server currently residing in Chicago.
 
 Current Server:
-74.91.113.130:27015
+74.91.113.130:27019
 
 Tickrate Settings:
-cl_cmdrate 100;cl_updaterate 100;rate 100000;cl_interp_ratio 0;cl_interp 0
+rate 144000;net_maxroutable 1200;net_splitrate 1;net_splitpacket_maxrate 30000;cl_cmdrate 120;cl_updaterate 120;cl_interp_ratio 0;cl_interp 0.0;
 
 # modes
 ## numbersmod
