@@ -6,6 +6,10 @@
 		{
 			"name" "numbersmod 6.9.420"
 		}
+		"sportymod"
+		{
+			"name" "sportymod 0.0"
+		}
 		"surfmod"
 		{
 			"name" "surfmod 6.9.420"
@@ -80,6 +84,10 @@
 		"numbersmod"
 		{
 			"name" "numbersmod 6.9.420"
+		}
+		"sportymod"
+		{
+			"name" "sportymod 0.0"
 		}
 		"surfmod"
 		{
