@@ -1,38 +1,38 @@
 "MatchModes"
-{	
-	"Bizzymod Configs"
+{
+	"Game Modes"
 	{
 		"numbersmod"
 		{
 			"name" "numbersmod 6.9.420"
 		}
+		"sportymod"
+		{
+			"name" "sportymod 0.0"
+		}
+		"surfmod"
+		{
+			"name" "surfmod 6.9.420"
+		}
+		"pissmod"
+		{
+			"name" "pissmod 6.9.420"
+		}
 		"barrymod"
 		{
 			"name" "barrymod 70.0.0"
 		}
-		"spacemod"
-		{
-			"name" "spacemod -1.0"
-		}
-		"thundermod"
-		{
-			"name" "ThunderMod 0.5"
-		}
-		"acv"
-		{
-			"name" "Advanced Versus 2.0"
-		}
 		"bizzymod"
 		{
-			"name" "bizzymod 0.8"
-		}
-		"zonereal"
-		{
-			"name" "zonemod realism 6.9"
+			"name" "bizzymod 1.0"
 		}
 		"kneemod"
 		{
-			"name" "kneemod 2.3"
+			"name" "kneemod 2.5"
+		}
+		"busmod"
+		{
+			"name" "busmod 69.69.69"
 		}
 		"bobbymod"
 		{
@@ -42,13 +42,13 @@
 		{
 			"name" "seltzermod 4.20"
 		}
-		"busmod"
-		{
-			"name" "busmod 69.69.69"
-		}
 		"bananamod"
 		{
-			"name" "bananamod 0.7"
+			"name" "bananamod 0.75"
+		}
+		"spacemod"
+		{
+			"name" "spacemod -1.0"
 		}
 		"heizemod"
 		{
@@ -74,9 +74,104 @@
 		{
 			"name" "deadman 6.1"
 		}
+		"goldengun"
+		{
+			"name" "goldengun 0.0"
+		}
+	}
+	"Bizzymod Configs"
+	{
+		"numbersmod"
+		{
+			"name" "numbersmod 6.9.420"
+		}
+		"sportymod"
+		{
+			"name" "sportymod 0.0"
+		}
+		"surfmod"
+		{
+			"name" "surfmod 6.9.420"
+		}
+		"pissmod"
+		{
+			"name" "pissmod 6.9.420"
+		}
+		"barrymod"
+		{
+			"name" "barrymod 70.0.0"
+		}
+		"bizzymod"
+		{
+			"name" "bizzymod 0.8"
+		}
+		"kneemod"
+		{
+			"name" "kneemod 2.3"
+		}
+		"busmod"
+		{
+			"name" "busmod 69.69.69"
+		}
+		"bobbymod"
+		{
+			"name" "bobbymod 0.5"
+		}
+		"seltzermod"
+		{
+			"name" "seltzermod 4.20"
+		}
+		"bananamod"
+		{
+			"name" "bananamod 0.7"
+		}
+		"spacemod"
+		{
+			"name" "spacemod -1.0"
+		}
+		"heizemod"
+		{
+			"name" "heizemod 1.0"
+		}
+		"flatmod"
+		{
+			"name" "flatmod 0.1"
+		}
+		"onemod"
+		{
+			"name" "OneMod 1.3"
+		}
+		"powermod"
+		{
+			"name" "powermod 4.0"
+		}
+		"invokemod"
+		{
+			"name" "invokemod 0.0.69.2"
+		}
+		"deadmanX"
+		{
+			"name" "deadman 6.1"
+		}
+		"goldengun"
+		{
+			"name" "goldengun 0.0"
+		}
 	}
 	"ZoneMod Configs"
 	{
+		"thundermod"
+		{
+			"name" "ThunderMod 1.0"
+		}
+		"acv"
+		{
+			"name" "Advanced Versus 2.5"
+		}
+		"zonereal"
+		{
+			"name" "zonemod realism 6.9"
+		}
 		"zonemod"
 		{
 			"name" "ZoneMod"

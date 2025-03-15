@@ -12,15 +12,15 @@ DAEMON="$DIR/srcds_run"
 
 # Change all Parameters to your needs.
 
-############################################## TICKRATE INFO ########################################################
+########################################################## TICKRATE INFO ####################################################################
 #
 # Only 128 Tickrate and up will need modifications to the frametime and frametime_override, 100 tick and below do not need these parameters.
 # 128 Tickrate needs the follows params added: -frametime 0.037 -frametime_override 0.037
 #
-#####################################################################################################################
+#############################################################################################################################################
 
 
-############################################# PARAMETERS & SERVER.CFG ###############################################
+##################################################### PARAMETERS & SERVER.CFG ###############################################################
 #
 # SVNUM will come in handy for when you're hosting multiple Servers on the same Dedicated Machine.
 # Replace "1.3.3.7" with your Dedicated's Server IP.
@@ -30,16 +30,17 @@ DAEMON="$DIR/srcds_run"
 # If you're hosting multiple Servers, simply copy server1.cfg, change the hostname inside and rename it to server2.cfg and so on.
 # Don't forget to copy and edit the file as well, the SVNUM has to match the server#.cfg and the Port has to be available.
 #
-#####################################################################################################################
+#############################################################################################################################################
 
-# The current settings will start the Server on 100 Tick on Dead Center 1.
+# The current settings will start the Server on 120 Tick on The Passing Map 1 - Riverbank.
 SVNUM=1
 IP=1.3.3.7
 PORT=27015
 NAME=L4D2_Server$SVNUM
-PARAMS="-game left4dead2 -ip $IP -port $PORT +sv_clockcorrection_msecs 25 -timeout 10 -tickrate 100 +map c1m1_hotel -maxplayers 32 +servercfgfile server$SVNUM.cfg"
-DESC="L4D2 Dedicated Server #$SVNUM on port $PORT"
+PARAMS="-game left4dead2 -ip $IP -port $PORT +servercfgfile server1.cfg -heapsize 1572864 -threads 16 -tickrate 120 -timeout 10 -maxplayers 32 -high -full -preload +map c6m1_riverbank -nohltv -nosteamcontroller -nogamepadui -noff -noforcemparms -noforcemaccel -noforcemspd -novid -nostartupsound -nostartupmenu -nominidumps -nomessagebox -nocrashdialog +sv_allow_wait_command 1 +sv_lan 0 +sv_region 0 +sv_consistency 0 +sv_pure 0 +sv_pure_kick_clients 0 +sv_visiblemaxplayers 32 +sv_cheats 0 +sv_forcepreload 1 +sv_voiceenable 1 +sv_alltalk 1 +mp_roundlimit 5 +motd_enabled 1"
+DESC="Left 4 Dead 2 Dedicated Server #$SVNUM on host port $PORT"
 
+#############################################################################################################################################################################################################################################################################
 
 ###########################################
 #                                         #

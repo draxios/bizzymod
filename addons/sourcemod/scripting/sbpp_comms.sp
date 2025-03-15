@@ -113,7 +113,7 @@ new String:logQuery[256];
 #endif
 
 new Float:RetryTime = 15.0;
-new DefaultTime = 30;
+new DefaultTime = 1;
 new DisUBImCheck = 0;
 new ConsoleImmunity = 0;
 new ConfigMaxLength = 0;
