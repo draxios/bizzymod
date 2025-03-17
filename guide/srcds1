@@ -16,6 +16,7 @@ DAEMON="$DIR/srcds_run"
 #
 # Only 128 Tickrate and up will need modifications to the frametime and frametime_override, 100 tick and below do not need these parameters.
 # 128 Tickrate needs the follows params added: -frametime 0.037 -frametime_override 0.037
+# You should not use 128 Tickrate because 128 is not a whole multiple of 30.
 #
 #############################################################################################################################################
 
