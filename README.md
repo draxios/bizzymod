@@ -5,15 +5,15 @@ Bizzy's best server, Bizzy's Moon Mod, is quite possibly the greatest Linux dedi
 
 Moon Mod was designed with the simple idea that people shouldn't ever have to play shit mod.
 
-Current Server:
-74.91.113.130:27019
+Current Server IP:
+connect 74.91.113.130:27019
 
 Tickrate Settings:
 ;rate 144000;net_maxroutable 1200;net_splitrate 1;net_splitpacket_maxrate 30000;cl_cmdrate 120;cl_updaterate 120;cl_interp_ratio 0;cl_interp 0.0;
 
 # About
 ## Moon Mod
-Moon Mod is Bizzy's creation for numbers the numblers. It's played a lot more cause he's famous.
+Moon Mod is Bizzy's creation for Moon so that Moon can fix Left 4 Dead 2 in ways that its retarded developers didn't get right somehow. It's very underappreciated because most people are idiots and don't know what quality gameplay is (their brains have been corrupted by years of playing shit mod).
 
   * realism
   * tier 1 only, plus 1 allowed hunting rifle
