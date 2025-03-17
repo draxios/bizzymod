@@ -16,7 +16,8 @@ DAEMON="$DIR/srcds_run"
 #
 # Only 128 Tickrate and up will need modifications to the frametime and frametime_override, 100 tick and below do not need these parameters.
 # 128 Tickrate needs the follows params added: -frametime 0.037 -frametime_override 0.037
-# You should not use 128 Tickrate because 128 is not a whole multiple of 30.
+# You should not use 100 OR 128 Tickrate because 128 is not a whole multiple of 30.
+# Instead you should use 120 because it is the optimal tick rate.
 #
 #############################################################################################################################################
 
@@ -39,7 +40,7 @@ IP=74.91.113.130
 PORT=27019
 NAME=L4D2_Server$SVNUM
 PARAMS="-steam -game left4dead2 -ip $IP -port $PORT +sv_lan 0 +sv_region 0 +sv_allow_wait_command 1 +servercfgfile server1.cfg -heapsize 1572864 -threads 16 -tickrate 120 +sv_alternateticks 1 -timeout 10 -maxplayers 32 -high -preload +sv_forcepreload 1 +map c6m1_riverbank -nohltv -nominidumps -nomessagebox -nocrashdialog"
-DESC="Left 4 Dead 2 Dedicated Server #$SVNUM on host port $PORT"
+DESC="Left 4 Dead 2 Dedicated Server Hosted with IP 74.91.113.130 on Host Port 27019"
 
 #############################################################################################################################################################################################################################################################################
 
