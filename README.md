@@ -1,17 +1,19 @@
 # bizzymod
 Bizzymod was designed with simple idea that games should try to be fun and this is the spirit behind Bizzy's L4D2 servers and their playmodes.
 
-Bizzy's development server Bizzy's Playhouse is a simple Linux dedicated L4D2 server currently residing in Chicago.
+Bizzy's best server, Bizzy's Moon Mod, is quite possibly the greatest Linux dedicated L4D2 server in existance, currently residing in Chicago (US-East).
+
+Moon Mod was designed with the simple idea that people shouldn't ever have to play shit mod.
 
 Current Server:
 74.91.113.130:27019
 
 Tickrate Settings:
-rate 144000;net_maxroutable 1200;net_splitrate 1;net_splitpacket_maxrate 30000;cl_cmdrate 120;cl_updaterate 120;cl_interp_ratio 0;cl_interp 0.0;
+;rate 144000;net_maxroutable 1200;net_splitrate 1;net_splitpacket_maxrate 30000;cl_cmdrate 120;cl_updaterate 120;cl_interp_ratio 0;cl_interp 0.0;
 
-# modes
-## numbersmod
-numbersmod is Bizzy's creation for numbers the numblers. It's played a lot more cause he's famous.
+# About
+## Moon Mod
+Moon Mod is Bizzy's creation for numbers the numblers. It's played a lot more cause he's famous.
 
   * realism
   * tier 1 only, plus 1 allowed hunting rifle
