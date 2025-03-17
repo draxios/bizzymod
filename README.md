@@ -15,6 +15,9 @@ Tickrate Settings:
 ## Moon Mod
 Moon Mod is Bizzy's creation for Moon so that Moon can fix Left 4 Dead 2 in ways that its retarded developers didn't get right somehow. It's very underappreciated because most people are idiots and don't know what quality gameplay is (their brains have been corrupted by years of playing shit mod).
 
+## numbersmod
+numbersmod is Bizzy's creation for numbers
+
   * realism
   * tier 1 only, plus 1 allowed hunting rifle
   * 7k tank
