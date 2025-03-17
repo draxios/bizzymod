@@ -13,7 +13,7 @@ Tickrate Settings:
 
 # About
 ## Moon Mod
-Moon Mod is Bizzy's creation for Moon so that Moon can fix Left 4 Dead 2 in ways that its retarded developers didn't get right somehow. It's very underappreciated because most people are idiots and don't know what quality gameplay is (their brains have been corrupted by years of playing shit mod).
+Moon Mod is Bizzy's creation for Moon so that Moon can fix Left 4 Dead 2 in ways that its retarded developers didn't get right somehow. It's very underappreciated because most people are idiots and don't know what quality gameplay is (their brains have been corrupted by years of shit mod).
 
 ## numbersmod
 numbersmod is Bizzy's creation for numbers the numblers. It's played a lot more because his job is being a famous twitch streamer. His mod includes:
