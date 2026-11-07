@@ -1,3 +1,5 @@
+[DEPRECATED]: Now hosted->https://github.com/bogware/bizzymod
+
 # bizzymod
 Bizzymod was designed with simple idea that games should try to be fun and this is the spirit behind Bizzy's L4D2 servers and their playmodes.
 
