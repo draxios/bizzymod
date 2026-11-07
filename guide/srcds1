@@ -14,11 +14,11 @@ DAEMON="$DIR/srcds_run"
 
 ########################################################## TICKRATE INFO ####################################################################
 #
-# Only 128 Tickrate and up will need modifications to the frametime and frametime_override, 100 tick and below do not need these parameters.
+# Only 128 tickrate and up will need modifications to the frametime and frametime_override, 100 tick and below do not need these parameters.
 # 128 Tickrate needs the follows params added: -frametime 0.037 -frametime_override 0.037
-# You should not use 100 OR 128 Tickrate because they ar not a whole multiples of 30.
+# You should not use 100 OR 128 tickrate because they ar not a whole multiples of 30.
 # Instead you should use 120 because it is the optimal tick rate.
-# The safest option is 60 Tickrate.
+# The safest option is 60 tickrate.
 #
 #############################################################################################################################################
 
