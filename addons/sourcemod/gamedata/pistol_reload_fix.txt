@@ -1,0 +1,16 @@
+"Games"
+{
+    "left4dead2"
+    {
+        "Signatures"
+        {
+            "CTerrorPlayer::DoAnimationEvent"
+            {
+                "library"    "server"
+                "linux"        "@_ZN13CTerrorPlayer16DoAnimationEventE17PlayerAnimEvent_ti"
+                "windows"    "\x55\x8B\x2A\x56\x8B\x2A\x2A\x57\x8B\x2A\x83\x2A\x2A\x74\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x8B\x2A"
+                "mac"        "@_ZN13CTerrorPlayer16DoAnimationEventE17PlayerAnimEvent_ti"
+            }
+        }
+    }
+}  

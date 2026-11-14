@@ -1,0 +1,24 @@
+"Phrases"
+{
+	"List_Players"
+	{
+		"en"		"Who do you want to respawn?"
+		"ru"		"Кого оживить?"
+		"hu"	"Kit szeretnél visszahozni?"
+		"es"		"¿A quien quieres reaparecer?"
+	}
+	"Respawn_Player"
+	{
+		"en"		"Respawn player"
+		"ru"		"Оживить игрока"
+		"hu"	"Játékos visszahozása"
+		"es"		"Reaparecer jugador"
+	}
+	"Respawn_Info"
+	{
+		"en"		"Respawned player '%N'"
+		"ru"		"Оживлён игрок '%N'"
+		"hu"	"Játékos visszahozva '%N'"
+		"es"		"Reapareciste a '%N'"
+	}
+}

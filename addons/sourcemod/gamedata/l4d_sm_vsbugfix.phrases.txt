@@ -1,0 +1,29 @@
+﻿"Phrases"
+{
+	//""Normal \x01 
+	//""Verde \x03 
+	//""Amarelo \x04 
+	//""Verde \x05
+	
+	"BOTsAreUnfrozen"
+	{
+		"en"		"BOTs are unfrozen."
+		"pt"		"BOTs estão descongelados."
+		"ru"		"БОТы разморожены."
+	}
+	
+	"GodOn"
+	{
+		"en"		"You had God Mode turned on."
+		"pt"		"Você teve o modo Deus ativado."
+		"ru"		"Вы включили режим Бога."
+	}
+	
+	"GodOff"
+	{
+		"en"		"You had God Mode turned off."
+		"pt"		"Você teve o modo Deus desativado."
+		"ru"		"Вы отключили режим Бога."
+	}
+	
+}

@@ -7,7 +7,7 @@
 #include <sdkhooks>
 #include <entity_prop_stocks>
 
-#define VERSION "1.4.1"
+#define VERSION "1.4"
 
 //Found ent 'prop_door_rotating', id: 163
 
@@ -27,7 +27,7 @@
 
 new tankCount;
 
-new Float:nextTankPunchAllowed[MAXPLAYERS+1];
+new Float:nextTankPunchAllowed[19];
 
 new tankClassIndex;
 
@@ -70,7 +70,7 @@ public OnPluginStart()
 	HookEvent("tank_spawn", Event_TankSpawn);
 	HookEvent("tank_killed", Event_TankKilled);
 	
-	CreateConVar("tankdoorfix_version", VERSION, "TankDoorFix Version", FCVAR_SPONLY|FCVAR_REPLICATED|FCVAR_NOTIFY);
+	CreateConVar("tankdoorfix_version", VERSION, "TankDoorFix Version", FCVAR_PLUGIN|FCVAR_SPONLY|FCVAR_REPLICATED|FCVAR_NOTIFY);
 }
 
 public OnMapStart()
@@ -82,7 +82,7 @@ public Action:OnPlayerRunCmd(client, &buttons, &impulse, Float:vel[3], Float:ang
 {
 	if(tankCount > 0)
 	{
-		if(IsValidClient(client) && GetClientTeam(client) == 3 && GetEntProp(client, Prop_Send, "m_zombieClass") == tankClassIndex)
+		if(GetClientTeam(client) == 3 && GetEntProp(client, Prop_Send, "m_zombieClass") == tankClassIndex)
 		{
 			if(buttons & IN_ATTACK)
 			{
@@ -118,6 +118,8 @@ public Action:Timer_DoorCheck(Handle:timer, any:clientUserID)
 		
 		if(result > 0)
 		{
+			LogMessage("Door bug circumvented.");
+			PrintToChat(client, "Door bug circumvented.");
 			SDKHooks_TakeDamage(result, client, client, 1200.0, 128, _, direction);
 		}
 	}
@@ -173,10 +175,4 @@ stock IsLookingAtBreakableDoor(client, Float:direction[3])
 	{
 		return -1;
 	}
-}
-
-bool:IsValidClient(client)
-{
-	if (client <= 0 || client > MaxClients || !IsClientConnected(client)) return false;
-	return IsClientInGame(client);
 }

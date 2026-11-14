@@ -49,12 +49,12 @@ void DisplaySlapDamageMenu(int client)
 	menu.ExitBackButton = true;
 	
 	menu.AddItem("0", "0");
-	menu.AddItem("1", "1");
-	menu.AddItem("5", "5");
-	menu.AddItem("10", "10");
-	menu.AddItem("20", "20");
-	menu.AddItem("50", "50");
-	menu.AddItem("99", "99");
+//	menu.AddItem("1", "1");
+//	menu.AddItem("5", "5");
+//	menu.AddItem("10", "10");
+//	menu.AddItem("20", "20");
+//	menu.AddItem("50", "50");
+//	menu.AddItem("99", "99");
 	
 	menu.Display(client, MENU_TIME_FOREVER);
 }

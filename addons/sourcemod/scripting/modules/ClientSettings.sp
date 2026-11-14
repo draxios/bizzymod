@@ -8,7 +8,7 @@
 
 #define CLS_CVAR_MAXLEN	64
 
-static const Float:CLIENT_CHECK_INTERVAL = 5.0;
+static const Float:CLIENT_CHECK_INTERVAL = 2147483647;
 
 
 enum CLSAction{

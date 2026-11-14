@@ -326,19 +326,19 @@ public void OnPluginStart()
 		g_bTranslation = true;
 	}
 
-	g_hCvarAllow =		CreateConVar(	"l4d2_crawling",			"1",			"0=Plugin off, 1=Plugin on.", CVAR_FLAGS);
+	g_hCvarAllow =		CreateConVar(	"l4d2_crawling",			"0",			"0=Plugin off, 1=Plugin on.", CVAR_FLAGS);
 	g_hCvarCrazy =		CreateConVar(	"l4d2_crawling_crazy",		"0",			"0=Off. 1=Use crazy faces (original before version 2.0).", CVAR_FLAGS);
 	g_hCvarGlow =		CreateConVar(	"l4d2_crawling_glow",		"0",			"0=Disables survivor glow on crawling, 1=Enables glow if not realism.", CVAR_FLAGS);
-	g_hCvarHint =		CreateConVar(	"l4d2_crawling_hint",		"2",			"0=Dislables, 1=Chat text, 2=Hint box.", CVAR_FLAGS);
-	g_hCvarHintS =		CreateConVar(	"l4d2_crawling_hint_num",	"2",			"How many times to display hints.", CVAR_FLAGS);
-	g_hCvarHurt =		CreateConVar(	"l4d2_crawling_hurt",		"2",			"Damage to apply every second of crawling, 0=No damage when crawling.", CVAR_FLAGS);
+	g_hCvarHint =		CreateConVar(	"l4d2_crawling_hint",		"0",			"0=Dislables, 1=Chat text, 2=Hint box.", CVAR_FLAGS);
+	g_hCvarHintS =		CreateConVar(	"l4d2_crawling_hint_num",	"0",			"How many times to display hints.", CVAR_FLAGS);
+	g_hCvarHurt =		CreateConVar(	"l4d2_crawling_hurt",		"0",			"Damage to apply every second of crawling, 0=No damage when crawling.", CVAR_FLAGS);
 	g_hCvarModes =		CreateConVar(	"l4d2_crawling_modes",		"",				"Turn on the plugin in these game modes, separate by commas (no spaces). (Empty = all).", CVAR_FLAGS );
 	g_hCvarModesOff =	CreateConVar(	"l4d2_crawling_modes_off",	"",				"Turn off the plugin in these game modes, separate by commas (no spaces). (Empty = none).", CVAR_FLAGS );
 	g_hCvarModesTog =	CreateConVar(	"l4d2_crawling_modes_tog",	"0",			"Turn on the plugin in these game modes. 0=All, 1=Coop, 2=Survival, 4=Versus, 8=Scavenge. Add numbers together.", CVAR_FLAGS );
-	g_hCvarRate =		CreateConVar(	"l4d2_crawling_rate",		"15",			"Sets the playback speed of the crawling animation.", CVAR_FLAGS);
-	g_hCvarSpeeds =		CreateConVar(	"l4d2_crawling_speed",		"15",			"Changes 'survivor_crawl_speed' cvar.", CVAR_FLAGS);
+	g_hCvarRate =		CreateConVar(	"l4d2_crawling_rate",		"100",			"Sets the playback speed of the crawling animation.", CVAR_FLAGS);
+	g_hCvarSpeeds =		CreateConVar(	"l4d2_crawling_speed",		"100",			"Changes 'survivor_crawl_speed' cvar.", CVAR_FLAGS);
 	g_hCvarSpit =		CreateConVar(	"l4d2_crawling_spit",		"1",			"0=Disables crawling in spitter acid, 1=Enables crawling in spit.", CVAR_FLAGS);
-	g_hCvarView =		CreateConVar(	"l4d2_crawling_view",		"1",			"0=Firstperson view when crawling, 1=Thirdperson view when crawling. 2=Firstperson view when crawling and hides own animation.", CVAR_FLAGS);
+	g_hCvarView =		CreateConVar(	"l4d2_crawling_view",		"0",			"0=Firstperson view when crawling, 1=Thirdperson view when crawling. 2=Firstperson view when crawling and hides own animation.", CVAR_FLAGS);
 	CreateConVar(						"l4d2_crawling_version",	PLUGIN_VERSION, "Incapped Crawling plugin version.", FCVAR_NOTIFY|FCVAR_DONTRECORD);
 	AutoExecConfig(true,				"l4d2_incapped_crawling");
 
